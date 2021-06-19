@@ -81,10 +81,15 @@ export function populateLayers(data) {
         let parentLayer = createParentLayer(layer, clusterGroup)
         layer.sublayers.forEach(sublayer => {
           sublayer.uuid = uuidv4()
+          if(!sublayer.name){
+            console.log(layer)
+            debugger
+          }
           addLayerToInterface(sublayer, parentLayer);
         })
       }
       else addLayerToInterface(layer, clusterGroup);
+      
     });
   })
 }
@@ -232,6 +237,7 @@ function createLegend(layer) {
   let legendClone = legendTemp.content.cloneNode(true);
   //add icon
   if (layer.icon) legendClone.querySelector("#icon").src = `images/${layer.icon}`;
+  else if (layer.image) legendClone.querySelector("#icon").src = `images/${layer.image}`;
   else legendClone.querySelector("#icon").classList.add("hidden")
   //title
   legendClone.querySelector("#layer-name").innerText = layer.name;

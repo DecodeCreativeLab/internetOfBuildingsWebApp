@@ -1,0 +1,1271 @@
+{
+  "group": "Energy Exchange",
+  "icon": "image_id_in_shared_folder",
+  "proposal": {
+    "description": "We propose an active and a passive way to move towards a new energy model. The active strategy is based on the installation of photovoltaic panels that can rise the self-production of energy at the building level, while the passive strategy is based on the renovation of the existing buildings to increase their energy efficiency. The implementation of both strategies will allow the generation of a decentralised system where the exchange of energy will be possible between buildings.",
+    "image": "image_id_in_shared_folder",
+    "video": "video_url"
+  },
+  "methodology": {
+    "description": "We start analyzing the existing energy consumption pattern based on the land use distribution and energy certification and potential solar energy production on the rooftops of every building in our district. This allow us to identify which strategies to apply to each of them in order to improve their energy balance and their potential to share energy with other users around through a future smart micro-grid system.",
+    "image": "Energy_methodology.png",
+    "video": "video_url"
+  },
+  "challenge": {
+    "description": "The main challenge in terms of energy is to move towards a more rational use of energy, based on energy efficiency and renewable and local power generation that prioritises self-consumption and self-generation. Empowering citizens to produce locally and consume energy in a more efficient way, as well as improve the state of buildings and infrastructures will allow Barcelona to achieve a new energy model.",
+    "image": "Energy_challenges.png",
+    "video": "video_url"
+  },
+  "layers": [
+    {
+      "name": "WINTER_E Consumption",
+      "sublayers": [
+        {
+          "name": "Night Consumption",
+          "mapID": "internetofbuildings2021.ab80d445",
+          "mapboxSrc": [
+            "Energy-exchange_Winter_0-5am-69ln7m"
+          ],
+          "type": "polygon",
+          "representation": "2D",
+          "source": "https://www.sedecatastro.gob.es & https://web.gencat.cat",
+          "scale": "detailed",
+          "units": "kWh",
+          "description": "Potential energy consumption per building at night, from 0:00 to 5:00, during the winter period.",
+          "interpolation": true,
+          "paint": {
+            "property": "01_Consumption",
+            "stops": [
+              [ 25, "#fef0d9"],
+              [ 50, "#fadbc4"],
+              [ 75, "#f6c6af"],
+              [ 100, "#f2b09a"],
+              [ 500, "#ed9b86"],
+              [ 1000, "#e98671"],
+              [ 5000, "#e5705c"],
+              [ 10000, "#e15b47"],
+              [ 100000, "#dc4632"]
+            ]
+          },
+          "legend": [
+            {"color": "#fef0d9", "stop": "0"},
+            {"color": "#f2915c", "stop": "1000"},
+            {"color": "#dc4632", "stop": "487270"}
+          ],
+          "interactable": {
+            "status": true,
+            "text": "BUILDING INFORMATION"
+          },
+          "image": "Energy_consumption-winter.png"
+        },
+        {
+          "name": "Morning Consumption",
+          "mapID": "internetofbuildings2021.9i82ug9z",
+          "mapboxSrc": [
+            "Energy-exchange_Winter_6-11am-1dmfjd"
+          ],
+          "type": "polygon",
+          "representation": "2D",
+          "source": "https://www.sedecatastro.gob.es & https://web.gencat.cat",
+          "scale": "detailed",
+          "units": "kWh",
+          "description": "Potential energy consumption per building in the morning, from 6:00 to 11:00, during the winter period.",
+          "interpolation": true,
+          "paint": {
+            "property": "01_Consumption",
+            "stops": [
+              [ 25, "#fef0d9"],
+              [ 50, "#fadbc4"],
+              [ 75, "#f6c6af"],
+              [ 100, "#f2b09a"],
+              [ 500, "#ed9b86"],
+              [ 1000, "#e98671"],
+              [ 5000, "#e5705c"],
+              [ 10000, "#e15b47"],
+              [ 100000, "#dc4632"]
+            ]
+          },
+          "legend": [
+            {"color": "#fef0d9", "stop": "0"},
+            {"color": "#f2915c", "stop": "1000"},
+            {"color": "#dc4632", "stop": "487270"}
+          ],
+          "interactable": {
+            "status": true,
+            "text": "BUILDING INFORMATION"
+          },
+          "image": "Energy_consumption-winter.png"
+        },
+        {
+          "name": "Afternoon Consumption",
+          "mapID": "internetofbuildings2021.9gj5lvhx",
+          "mapboxSrc": [
+            "Energy-exchange_Winter_12-17p-3cv4ah"
+          ],
+          "type": "polygon",
+          "representation": "2D",
+          "source": "https://www.sedecatastro.gob.es & https://web.gencat.cat",
+          "scale": "detailed",
+          "units": "kWh",
+          "description": "Potential energy consumption per building in the afternoon, from 12.00 to 17.00, during the winter period.",
+          "interpolation": true,
+          "paint": {
+            "property": "01_Consumption",
+            "stops": [
+              [ 25, "#fef0d9"],
+              [ 50, "#fadbc4"],
+              [ 75, "#f6c6af"],
+              [ 100, "#f2b09a"],
+              [ 500, "#ed9b86"],
+              [ 1000, "#e98671"],
+              [ 5000, "#e5705c"],
+              [ 10000, "#e15b47"],
+              [ 100000, "#dc4632"]
+            ]
+          },
+          "legend": [
+            {"color": "#fef0d9", "stop": "0"},
+            {"color": "#f2915c", "stop": "1000"},
+            {"color": "#dc4632", "stop": "487270"}
+          ],
+          "interactable": {
+            "status": true,
+            "text": "BUILDING INFORMATION"
+          },
+          "image": "Energy_consumption-winter.png"
+        },
+        {
+          "name": "Evening Consumption",
+          "mapID": "internetofbuildings2021.a79wyxuw",
+          "mapboxSrc": [
+            "Energy-exchange_Winter_18-23p-0yqaqb"
+          ],
+          "type": "polygon",
+          "representation": "2D",
+          "source": "https://www.sedecatastro.gob.es & https://web.gencat.cat",
+          "scale": "detailed",
+          "units": "kWh",
+          "description": "Potential energy consumption per building in the evening, from 18:00 to 23:00, during the winter period.",
+          "interpolation": true,
+          "paint": {
+            "property": "01_Consumption",
+            "stops": [
+              [ 25, "#fef0d9"],
+              [ 50, "#fadbc4"],
+              [ 75, "#f6c6af"],
+              [ 100, "#f2b09a"],
+              [ 500, "#ed9b86"],
+              [ 1000, "#e98671"],
+              [ 5000, "#e5705c"],
+              [ 10000, "#e15b47"],
+              [ 100000, "#dc4632"]
+            ]
+          },
+          "legend": [
+            {"color": "#fef0d9", "stop": "0"},
+            {"color": "#f2915c", "stop": "1000"},
+            {"color": "#dc4632", "stop": "487270"}
+          ],
+          "interactable": {
+            "status": true,
+            "text": "BUILDING INFORMATION"
+          },
+          "image": "Energy_consumption-winter.png"
+        },
+        {
+          "name": "TOTAL Consumption",
+          "mapID": "internetofbuildings2021.26qtviyx",
+          "mapboxSrc": [
+            "Energy-exchange_Winter_total-9gciw0"
+          ],
+          "type": "polygon",
+          "representation": "2D",
+          "source": "https://www.sedecatastro.gob.es & https://web.gencat.cat",
+          "scale": "detailed",
+          "units": "kWh/day",
+          "description": "Total potential energy consumption per building per day, during the winter period.",
+          "interpolation": true,
+          "paint": {
+            "property": "01_Consumption",
+            "stops": [
+              [ 25, "#fef0d9"],
+              [ 50, "#fadbc4"],
+              [ 75, "#f6c6af"],
+              [ 100, "#f2b09a"],
+              [ 500, "#ed9b86"],
+              [ 1000, "#e98671"],
+              [ 5000, "#e5705c"],
+              [ 10000, "#e15b47"],
+              [ 100000, "#dc4632"]
+            ]
+          },
+          "legend": [
+            {"color": "#fef0d9", "stop": "0"},
+            {"color": "#f2915c", "stop": "1000"},
+            {"color": "#dc4632", "stop": "1424420"}
+          ],
+          "interactable": {
+            "status": true,
+            "text": "BUILDING INFORMATION"
+          },
+          "image": "Energy_consumption-winter.png"
+        }
+      ]
+    },
+    {
+      "name": "WINTER_E Production",
+      "sublayers": [
+        {
+          "name": "Night Production",
+          "mapID": "internetofbuildings2021.ab80d445",
+          "mapboxSrc": [
+            "Energy-exchange_Winter_0-5am-69ln7m"
+          ],
+          "type": "polygon",
+          "representation": "2D",
+          "source": "https://www.sedecatastro.gob.es & https://web.gencat.cat/ca/inici",
+          "scale": "detailed",
+          "units": "kWh",
+          "description": "Potential energy production per building at night, from 0:00 to 5:00, during the winter period.",
+          "interpolation": true,
+          "paint": {
+            "property": "02_Production",
+            "stops": [
+              [ 25, "#cfe3ed"],
+              [ 50, "#b6d5e6"],
+              [ 75, "#9dc7de"],
+              [ 100, "#83b8d6"],
+              [ 500, "#6aaacf"],
+              [ 1000, "#519cc7"],
+              [ 2500, "#378ebf"],
+              [ 5000, "#1e7fb8"],
+              [ 10000, "#0571b0"]
+            ]
+          },
+          "legend": [
+            {"color": "#cfe3ed", "stop": "0"},
+            {"color": "#77B4D5", "stop": "1000"},
+            {"color": "#0571b0", "stop": "23470"}
+          ],
+          "interactable": {
+            "status": true,
+            "text": "BUILDING INFORMATION"
+          },
+          "image": "Energy_production-winter.png"
+        },
+        {
+          "name": "Morning Production",
+          "mapID": "internetofbuildings2021.9i82ug9z",
+          "mapboxSrc": [
+            "Energy-exchange_Winter_6-11am-1dmfjd"
+          ],
+          "type": "polygon",
+          "representation": "2D",
+          "source": "https://www.sedecatastro.gob.es & https://web.gencat.cat/ca/inici",
+          "scale": "detailed",
+          "units": "kWh",
+          "description": "Potential energy production per building in the morning, from 6:00 to 11:00, during the winter period.",
+          "interpolation": true,
+          "paint": {
+            "property": "02_Production",
+            "stops": [
+              [ 25, "#cfe3ed"],
+              [ 50, "#b6d5e6"],
+              [ 75, "#9dc7de"],
+              [ 100, "#83b8d6"],
+              [ 500, "#6aaacf"],
+              [ 1000, "#519cc7"],
+              [ 2500, "#378ebf"],
+              [ 5000, "#1e7fb8"],
+              [ 10000, "#0571b0"]
+            ]
+          },
+          "legend": [
+            {"color": "#cfe3ed", "stop": "0"},
+            {"color": "#77B4D5", "stop": "1000"},
+            {"color": "#0571b0", "stop": "23470"}
+          ],
+          "interactable": {
+            "status": true,
+            "text": "BUILDING INFORMATION"
+          },
+          "image": "Energy_production-winter.png"
+        },
+        {
+          "name": "Afternoon Production",
+          "mapID": "internetofbuildings2021.9gj5lvhx",
+          "mapboxSrc": [
+            "Energy-exchange_Winter_12-17p-3cv4ah"
+          ],
+          "type": "polygon",
+          "representation": "2D",
+          "source": "https://www.sedecatastro.gob.es & https://web.gencat.cat/ca/inici",
+          "scale": "detailed",
+          "units": "kWh",
+          "description": "Potential energy production per building in the afternoon, from 12:00 to 17:00, during the winter period.",
+          "interpolation": true,
+          "paint": {
+            "property": "02_Production",
+            "stops": [
+              [ 25, "#cfe3ed"],
+              [ 50, "#b6d5e6"],
+              [ 75, "#9dc7de"],
+              [ 100, "#83b8d6"],
+              [ 500, "#6aaacf"],
+              [ 1000, "#519cc7"],
+              [ 2500, "#378ebf"],
+              [ 5000, "#1e7fb8"],
+              [ 10000, "#0571b0"]
+            ]
+          },
+          "legend": [
+            {"color": "#cfe3ed", "stop": "0"},
+            {"color": "#77B4D5", "stop": "1000"},
+            {"color": "#0571b0", "stop": "23470"}
+          ],
+          "interactable": {
+            "status": true,
+            "text": "BUILDING INFORMATION"
+          },
+          "image": "Energy_production-winter.png"
+        },
+        {
+          "name": "Evening Production",
+          "mapID": "internetofbuildings2021.a79wyxuw",
+          "mapboxSrc": [
+            "Energy-exchange_Winter_18-23p-0yqaqb"
+          ],
+          "type": "polygon",
+          "representation": "2D",
+          "source": "https://www.sedecatastro.gob.es & https://web.gencat.cat/ca/inici",
+          "scale": "detailed",
+          "units": "kWh",
+          "description": "Potential energy production per building in the evening, from 18:00 to 23:00, during the winter period.",
+          "interpolation": true,
+          "paint": {
+            "property": "02_Production",
+            "stops": [
+              [ 25, "#cfe3ed"],
+              [ 50, "#b6d5e6"],
+              [ 75, "#9dc7de"],
+              [ 100, "#83b8d6"],
+              [ 500, "#6aaacf"],
+              [ 1000, "#519cc7"],
+              [ 2500, "#378ebf"],
+              [ 5000, "#1e7fb8"],
+              [ 10000, "#0571b0"]
+            ]
+          },
+          "legend": [
+            {"color": "#cfe3ed", "stop": "0"},
+            {"color": "#77B4D5", "stop": "1000"},
+            {"color": "#0571b0", "stop": "23470"}
+          ],
+          "interactable": {
+            "status": true,
+            "text": "BUILDING INFORMATION"
+          },
+          "image": "Energy_production-winter.png"
+        },
+        {
+          "name": "TOTAL Production",
+          "mapID": "internetofbuildings2021.26qtviyx",
+          "mapboxSrc": [
+            "Energy-exchange_Winter_total-9gciw0"
+          ],
+          "type": "polygon",
+          "representation": "2D",
+          "source": "https://www.sedecatastro.gob.es & https://web.gencat.cat/ca/inici",
+          "scale": "detailed",
+          "units": "kWh/day",
+          "description": "Total potential energy production per building per day, during the winter period.",
+          "interpolation": true,
+          "paint": {
+            "property": "02_Production",
+            "stops": [
+              [ 25, "#cfe3ed"],
+              [ 50, "#b6d5e6"],
+              [ 75, "#9dc7de"],
+              [ 100, "#83b8d6"],
+              [ 500, "#6aaacf"],
+              [ 1000, "#519cc7"],
+              [ 2500, "#378ebf"],
+              [ 5000, "#1e7fb8"],
+              [ 10000, "#0571b0"]
+            ]
+          },
+          "legend": [
+            {"color": "#cfe3ed", "stop": "0"},
+            {"color": "#77B4D5", "stop": "1000"},
+            {"color": "#0571b0", "stop": "35857"}
+          ],
+          "interactable": {
+            "status": true,
+            "text": "BUILDING INFORMATION"
+          },
+          "image": "Energy_production-winter.png"
+        }
+      ]
+    },
+    {
+      "name": "WINTER_Energy Balance",
+      "sublayers": [
+        {
+          "name": "Night Balance",
+          "mapID": "internetofbuildings2021.ab80d445",
+          "mapboxSrc": [
+            "Energy-exchange_Winter_0-5am-69ln7m"
+          ],
+          "type": "polygon",
+          "representation": "2D",
+          "source": "https://www.sedecatastro.gob.es & https://web.gencat.cat",
+          "scale": "detailed",
+          "units": "N/A",
+          "description": "Potential energy excess per building at night and categorization of each of them, from 0:00 to 5:00, during the winter period.",
+          "interpolation": false,
+          "paint": {
+            "property": "Category",
+            "stops": [
+              [ "High_consumer", "#DC4632"],
+              [ "Mid_consumer", "#F2915C"],
+              [ "Mid_producer", "#77B4D5"],
+              [ "High_producer", "#0571B0"]
+            ]
+          },
+          "legend": [
+            {
+              "color": "#DC4632",
+              "stop": "High-consumer(+1000kWh)"
+            },
+	        {
+              "color": "#F2915C",
+              "stop": "Consumer"
+            },
+	        {
+              "color": "#77B4D5",
+              "stop": "Producer"
+            },
+            {
+              "color": "#0571B0",
+              "stop": "High-producer(+1000kWh)"
+            }
+          ],
+          "interactable": {
+            "status": true,
+            "text": "BUILDING INFORMATION"
+          },
+          "image": "Energy_balance-winter.png"
+        },
+        {
+          "name": "Morning Balance",
+          "mapID": "internetofbuildings2021.9i82ug9z",
+          "mapboxSrc": [
+            "Energy-exchange_Winter_6-11am-1dmfjd"
+          ],
+          "type": "polygon",
+          "representation": "2D",
+          "source": "https://www.sedecatastro.gob.es & https://web.gencat.cat/ca/inici",
+          "scale": "detailed",
+          "units": "N/A",
+          "description": "Potential energy excess per building in the morning and categorization of each of them, from 6:00 to 11:00, during the winter period.",
+          "interpolation": false,
+          "paint": {
+            "property": "Category",
+            "stops": [
+              [ "High_consumer", "#DC4632"],
+              [ "Mid_consumer", "#F2915C"],
+              [ "Mid_producer", "#77B4D5"],
+              [ "High_producer", "#0571B0"]
+            ]
+          },
+          "legend": [
+            {
+              "color": "#DC4632",
+              "stop": "High-consumer(+1000kWh)"
+            },
+	        {
+              "color": "#F2915C",
+              "stop": "Consumer"
+            },
+	        {
+              "color": "#77B4D5",
+              "stop": "Producer"
+            },
+            {
+              "color": "#0571B0",
+              "stop": "High-producer(+1000kWh)"
+            }
+          ],
+          "interactable": {
+            "status": true,
+            "text": "BUILDING INFORMATION"
+          },
+          "image": "Energy_balance-winter.png"
+        },
+        {
+          "name": "Afternoon Balance",
+          "mapID": "internetofbuildings2021.9gj5lvhx",
+          "mapboxSrc": [
+            "Energy-exchange_Winter_12-17p-3cv4ah"
+          ],
+          "type": "polygon",
+          "representation": "2D",
+          "source": "https://www.sedecatastro.gob.es & https://web.gencat.cat/ca/inici",
+          "scale": "detailed",
+          "units": "N/A",
+          "description": "Potential energy excess per building in the afternoon and categorization of each of them, from 12:00 to 17:00, during the winter period.",
+          "interpolation": false,
+          "paint": {
+            "property": "Category",
+            "stops": [
+              [ "High_consumer", "#DC4632"],
+              [ "Mid_consumer", "#F2915C"],
+              [ "Mid_producer", "#77B4D5"],
+              [ "High_producer", "#0571B0"]
+            ]
+          },
+          "legend": [
+            {
+              "color": "#DC4632",
+              "stop": "High-consumer(+1000kWh)"
+            },
+	        {
+              "color": "#F2915C",
+              "stop": "Consumer"
+            },
+	        {
+              "color": "#77B4D5",
+              "stop": "Producer"
+            },
+            {
+              "color": "#0571B0",
+              "stop": "High-producer(+1000kWh)"
+            }
+          ],
+          "interactable": {
+            "status": true,
+            "text": "BUILDING INFORMATION"
+          },
+          "image": "Energy_balance-winter.png"
+        },
+        {
+          "name": "Evening Balance",
+          "mapID": "internetofbuildings2021.a79wyxuw",
+          "mapboxSrc": [
+            "Energy-exchange_Winter_18-23p-0yqaqb"
+          ],
+          "type": "polygon",
+          "representation": "2D",
+          "source": "https://www.sedecatastro.gob.es & https://web.gencat.cat/ca/inici",
+          "scale": "detailed",
+          "units": "N/A",
+          "description": "Potential energy excess per building in the evening and categorization of each of them, from 18:00 to 23:00, during the winter period.",
+          "interpolation": false,
+          "paint": {
+            "property": "Category",
+            "stops": [
+              [ "High_consumer", "#DC4632"],
+              [ "Mid_consumer", "#F2915C"],
+              [ "Mid_producer", "#77B4D5"],
+              [ "High_producer", "#0571B0"]
+            ]
+          },
+          "legend": [
+            {
+              "color": "#DC4632",
+              "stop": "High-consumer(+1000kWh)"
+            },
+	        {
+              "color": "#F2915C",
+              "stop": "Consumer"
+            },
+	        {
+              "color": "#77B4D5",
+              "stop": "Producer"
+            },
+            {
+              "color": "#0571B0",
+              "stop": "High-producer(+1000kWh)"
+            }
+          ],
+          "interactable": {
+            "status": true,
+            "text": "BUILDING INFORMATION"
+          },
+          "image": "Energy_balance-winter.png"
+        },
+        {
+          "name": "TOTAL Balance",
+          "mapID": "internetofbuildings2021.26qtviyx",
+          "mapboxSrc": [
+            "Energy-exchange_Winter_total-9gciw0"
+          ],
+          "type": "polygon",
+          "representation": "2D",
+          "source": "https://www.sedecatastro.gob.es & https://web.gencat.cat/ca/inici",
+          "scale": "detailed",
+          "units": "N/A",
+          "description": "Total potential energy excess per building per day and categorization of each of them, during the winter period.",
+          "interpolation": false,
+          "paint": {
+            "property": "Category",
+            "stops": [
+              [ "High_consumer", "#DC4632"],
+              [ "Mid_consumer", "#F2915C"],
+              [ "Mid_producer", "#77B4D5"],
+              [ "High_producer", "#0571B0"]
+            ]
+          },
+          "legend": [
+            {
+              "color": "#DC4632",
+              "stop": "High-consumer(+1000kWh)"
+            },
+	        {
+              "color": "#F2915C",
+              "stop": "Consumer"
+            },
+	        {
+              "color": "#77B4D5",
+              "stop": "Producer"
+            },
+            {
+              "color": "#0571B0",
+              "stop": "High-producer(+1000kWh)"
+            }
+          ],
+          "interactable": {
+            "status": true,
+            "text": "BUILDING INFORMATION"
+          },
+          "image": "Energy_balance-winter.png"
+        }
+      ]
+    },
+    {
+      "name": "SUMMER_E Consumption",
+      "sublayers": [
+        {
+          "name": "Night Consumption",
+          "mapID": "internetofbuildings2021.34w9hw99",
+          "mapboxSrc": [
+            "Energy-exchange_Summer_0-5am-88y1xy"
+          ],
+          "type": "polygon",
+          "representation": "2D",
+          "source": "https://www.sedecatastro.gob.es & https://web.gencat.cat/ca/inici",
+          "scale": "detailed",
+          "units": "kWh",
+          "description": "Potential energy consumption per building at night, from 0:00 to 5:00, during the summer period.",
+          "interpolation": true,
+          "paint": {
+            "property": "01_Consumption",
+            "stops": [
+              [ 25, "#fef0d9"],
+              [ 50, "#fadbc4"],
+              [ 75, "#f6c6af"],
+              [ 100, "#f2b09a"],
+              [ 500, "#ed9b86"],
+              [ 1000, "#e98671"],
+              [ 5000, "#e5705c"],
+              [ 10000, "#e15b47"],
+              [ 100000, "#dc4632"]
+            ]
+          },
+          "legend": [
+            {"color": "#fef0d9", "stop": "0"},
+            {"color": "#f2915c", "stop": "1000"},
+            {"color": "#dc4632", "stop": "545129"}
+          ],
+          "interactable": {
+            "status": true,
+            "text": "BUILDING INFORMATION"
+          },
+          "image": "Energy_consumption-summer.png"
+        },
+        {
+          "name": "Morning Consumption",
+          "mapID": "internetofbuildings2021.bbg159qf",
+          "mapboxSrc": [
+            "Energy-exchange_Summer_6-11am-2xe4p0"
+          ],
+          "type": "polygon",
+          "representation": "2D",
+          "source": "https://www.sedecatastro.gob.es & https://web.gencat.cat/ca/inici",
+          "scale": "detailed",
+          "units": "kWh",
+          "description": "Potential energy consumption per building in the morning, from 6:00 to 11:00, during the summer period.",
+          "interpolation": true,
+          "paint": {
+            "property": "01_Consumption",
+            "stops": [
+              [ 25, "#fef0d9"],
+              [ 50, "#fadbc4"],
+              [ 75, "#f6c6af"],
+              [ 100, "#f2b09a"],
+              [ 500, "#ed9b86"],
+              [ 1000, "#e98671"],
+              [ 5000, "#e5705c"],
+              [ 10000, "#e15b47"],
+              [ 100000, "#dc4632"]
+            ]
+          },
+          "legend": [
+            {"color": "#fef0d9", "stop": "0"},
+            {"color": "#f2915c", "stop": "1000"},
+            {"color": "#dc4632", "stop": "545129"}
+          ],
+          "interactable": {
+            "status": true,
+            "text": "BUILDING INFORMATION"
+          },
+          "image": "Energy_consumption-summer.png"
+        },
+        {
+          "name": "Afternoon Consumption",
+          "mapID": "internetofbuildings2021.54tzbkpy",
+          "mapboxSrc": [
+            "Energy-exchange_Summer_12-17p-8ew66d"
+          ],
+          "type": "polygon",
+          "representation": "2D",
+          "source": "https://www.sedecatastro.gob.es & https://web.gencat.cat/ca/inici",
+          "scale": "detailed",
+          "units": "kWh",
+          "description": "Potential energy consumption per building in the afternoon, from 12:00 to 17:00, during the summer period.",
+          "interpolation": true,
+          "paint": {
+            "property": "01_Consumption",
+            "stops": [
+              [ 25, "#fef0d9"],
+              [ 50, "#fadbc4"],
+              [ 75, "#f6c6af"],
+              [ 100, "#f2b09a"],
+              [ 500, "#ed9b86"],
+              [ 1000, "#e98671"],
+              [ 5000, "#e5705c"],
+              [ 10000, "#e15b47"],
+              [ 100000, "#dc4632"]
+            ]
+          },
+          "legend": [
+            {"color": "#fef0d9", "stop": "0"},
+            {"color": "#f2915c", "stop": "1000"},
+            {"color": "#dc4632", "stop": "545129"}
+          ],
+          "interactable": {
+            "status": true,
+            "text": "BUILDING INFORMATION"
+          },
+          "image": "Energy_consumption-summer.png"
+        },
+        {
+          "name": "Evening Consumption",
+          "mapID": "internetofbuildings2021.d9zet7q2",
+          "mapboxSrc": [
+            "Energy-exchange_Summer_18-23p-cniyt8"
+          ],
+          "type": "polygon",
+          "representation": "2D",
+          "source": "https://www.sedecatastro.gob.es & https://web.gencat.cat/ca/inici",
+          "scale": "detailed",
+          "units": "kWh",
+          "description": "Potential energy consumption per building in the evening, from 18:00 to 23:00, during the summer period.",
+          "interpolation": true,
+          "paint": {
+            "property": "01_Consumption",
+            "stops": [
+              [ 25, "#fef0d9"],
+              [ 50, "#fadbc4"],
+              [ 75, "#f6c6af"],
+              [ 100, "#f2b09a"],
+              [ 500, "#ed9b86"],
+              [ 1000, "#e98671"],
+              [ 5000, "#e5705c"],
+              [ 10000, "#e15b47"],
+              [ 100000, "#dc4632"]
+            ]
+          },
+          "legend": [
+            {"color": "#fef0d9", "stop": "0"},
+            {"color": "#f2915c", "stop": "1000"},
+            {"color": "#dc4632", "stop": "545129"}
+          ],
+          "interactable": {
+            "status": true,
+            "text": "BUILDING INFORMATION"
+          },
+          "image": "Energy_consumption-summer.png"
+        },
+        {
+          "name": "TOTAL Consumption",
+          "mapID": "internetofbuildings2021.29rv5v1r",
+          "mapboxSrc": [
+            "Energy-exchange_Summer_total-5i0jbs"
+          ],
+          "type": "polygon",
+          "representation": "2D",
+          "source": "https://www.sedecatastro.gob.es & https://web.gencat.cat/ca/inici",
+          "scale": "detailed",
+          "units": "kWh/day",
+          "description": "Total potential energy consumption per building per day, during the summer period.",
+          "interpolation": true,
+          "paint": {
+            "property": "01_Consumption",
+            "stops": [
+              [ 25, "#fef0d9"],
+              [ 50, "#fadbc4"],
+              [ 75, "#f6c6af"],
+              [ 100, "#f2b09a"],
+              [ 500, "#ed9b86"],
+              [ 1000, "#e98671"],
+              [ 5000, "#e5705c"],
+              [ 10000, "#e15b47"],
+              [ 100000, "#dc4632"]
+            ]
+          },
+          "legend": [
+            {"color": "#fef0d9", "stop": "0"},
+            {"color": "#f2915c", "stop": "1000"},
+            {"color": "#dc4632", "stop": "1423082"}
+          ],
+          "interactable": {
+            "status": true,
+            "text": "BUILDING INFORMATION"
+          },
+          "image": "Energy_consumption-summer.png"
+        }
+      ]
+    },
+    {
+      "name": "SUMMER_E Production",
+      "sublayers": [
+        {
+          "name": "Night Production",
+          "mapID": "internetofbuildings2021.34w9hw99",
+          "mapboxSrc": [
+            "Energy-exchange_Summer_0-5am-88y1xy"
+          ],
+          "type": "polygon",
+          "representation": "2D",
+          "source": "https://www.sedecatastro.gob.es & https://web.gencat.cat/ca/inici",
+          "scale": "detailed",
+          "units": "kWh",
+          "description": "Potential energy production per building at night, from 0:00 to 5:00, during the summer period.",
+          "interpolation": true,
+          "paint": {
+            "property": "02_Production",
+            "stops": [
+              [ 25, "#cfe3ed"],
+              [ 50, "#b6d5e6"],
+              [ 75, "#9dc7de"],
+              [ 100, "#83b8d6"],
+              [ 500, "#6aaacf"],
+              [ 1000, "#519cc7"],
+              [ 2500, "#378ebf"],
+              [ 5000, "#1e7fb8"],
+              [ 10000, "#0571b0"]
+            ]
+          },
+          "legend": [
+            {"color": "#cfe3ed", "stop": "0"},
+            {"color": "#77B4D5", "stop": "1000"},
+            {"color": "#0571b0", "stop": "24327"}
+          ],
+          "interactable": {
+            "status": true,
+            "text": "BUILDING INFORMATION"
+          },
+          "image": "Energy_production-summer.png"
+        },
+        {
+          "name": "Morning Production",
+          "mapID": "internetofbuildings2021.bbg159qf",
+          "mapboxSrc": [
+            "Energy-exchange_Summer_6-11am-2xe4p0"
+          ],
+          "type": "polygon",
+          "representation": "2D",
+          "source": "https://www.sedecatastro.gob.es & https://web.gencat.cat/ca/inici",
+          "scale": "detailed",
+          "units": "kWh",
+          "description": "Potential energy production per building in the morning, from 6:00 to 11:00, during the summer period.",
+          "interpolation": true,
+          "paint": {
+            "property": "02_Production",
+            "stops": [
+              [ 25, "#cfe3ed"],
+              [ 50, "#b6d5e6"],
+              [ 75, "#9dc7de"],
+              [ 100, "#83b8d6"],
+              [ 500, "#6aaacf"],
+              [ 1000, "#519cc7"],
+              [ 2500, "#378ebf"],
+              [ 5000, "#1e7fb8"],
+              [ 10000, "#0571b0"]
+            ]
+          },
+          "legend": [
+            {"color": "#cfe3ed", "stop": "0"},
+            {"color": "#77B4D5", "stop": "1000"},
+            {"color": "#0571b0", "stop": "24327"}
+          ],
+          "interactable": {
+            "status": true,
+            "text": "BUILDING INFORMATION"
+          },
+          "image": "Energy_production-summer.png"
+        },
+        {
+          "name": "Afternoon Production",
+          "mapID": "internetofbuildings2021.54tzbkpy",
+          "mapboxSrc": [
+            "Energy-exchange_Summer_12-17p-8ew66d"
+          ],
+          "type": "polygon",
+          "representation": "2D",
+          "source": "https://www.sedecatastro.gob.es & https://web.gencat.cat/ca/inici",
+          "scale": "detailed",
+          "units": "kWh",
+          "description": "Potential energy production per building in the afternoon, from 12:00 to 17:00, during the summer period.",
+          "interpolation": true,
+          "paint": {
+            "property": "02_Production",
+            "stops": [
+              [ 25, "#cfe3ed"],
+              [ 50, "#b6d5e6"],
+              [ 75, "#9dc7de"],
+              [ 100, "#83b8d6"],
+              [ 500, "#6aaacf"],
+              [ 1000, "#519cc7"],
+              [ 2500, "#378ebf"],
+              [ 5000, "#1e7fb8"],
+              [ 10000, "#0571b0"]
+            ]
+          },
+          "legend": [
+            {"color": "#cfe3ed", "stop": "0"},
+            {"color": "#77B4D5", "stop": "1000"},
+            {"color": "#0571b0", "stop": "24327"}
+          ],
+          "interactable": {
+            "status": true,
+            "text": "BUILDING INFORMATION"
+          },
+          "image": "Energy_production-summer.png"
+        },
+        {
+          "name": "Evening Production",
+          "mapID": "internetofbuildings2021.d9zet7q2",
+          "mapboxSrc": [
+            "Energy-exchange_Summer_18-23p-cniyt8"
+          ],
+          "type": "polygon",
+          "representation": "2D",
+          "source": "https://www.sedecatastro.gob.es & https://web.gencat.cat/ca/inici",
+          "scale": "detailed",
+          "units": "kWh",
+          "description": "Potential energy production per building in the evening, from 18:00 to 23:00, during the summer period.",
+          "interpolation": true,
+          "paint": {
+            "property": "02_Production",
+            "stops": [
+              [ 25, "#cfe3ed"],
+              [ 50, "#b6d5e6"],
+              [ 75, "#9dc7de"],
+              [ 100, "#83b8d6"],
+              [ 500, "#6aaacf"],
+              [ 1000, "#519cc7"],
+              [ 2500, "#378ebf"],
+              [ 5000, "#1e7fb8"],
+              [ 10000, "#0571b0"]
+            ]
+          },
+          "legend": [
+            {"color": "#cfe3ed", "stop": "0"},
+            {"color": "#77B4D5", "stop": "1000"},
+            {"color": "#0571b0", "stop": "24327"}
+          ],
+          "interactable": {
+            "status": true,
+            "text": "BUILDING INFORMATION"
+          },
+          "image": "Energy_production-summer.png"
+        },
+        {
+          "name": "TOTAL Production",
+          "mapID": "internetofbuildings2021.29rv5v1r",
+          "mapboxSrc": [
+            "Energy-exchange_Summer_total-5i0jbs"
+          ],
+          "type": "polygon",
+          "representation": "2D",
+          "source": "https://www.sedecatastro.gob.es & https://web.gencat.cat/ca/inici",
+          "scale": "detailed",
+          "units": "kWh/day",
+          "description": "Total potential energy production per building per day, during the summer period.",
+          "interpolation": true,
+          "paint": {
+            "property": "02_Production",
+            "stops": [
+              [ 25, "#cfe3ed"],
+              [ 50, "#b6d5e6"],
+              [ 75, "#9dc7de"],
+              [ 100, "#83b8d6"],
+              [ 500, "#6aaacf"],
+              [ 1000, "#519cc7"],
+              [ 2500, "#378ebf"],
+              [ 5000, "#1e7fb8"],
+              [ 10000, "#0571b0"]
+            ]
+          },
+          "legend": [
+            {"color": "#cfe3ed", "stop": "0"},
+            {"color": "#77B4D5", "stop": "1000"},
+            {"color": "#0571b0", "stop": "35857"}
+          ],
+          "interactable": {
+            "status": true,
+            "text": "BUILDING INFORMATION"
+          },
+          "image": "Energy_production-summer.png"
+        }
+      ]
+    },
+    {
+      "name": "SUMMER_Energy Balance",
+      "sublayers": [
+        {
+          "name": "Night Balance",
+          "mapID": "internetofbuildings2021.34w9hw99",
+          "mapboxSrc": [
+            "Energy-exchange_Summer_0-5am-88y1xy"
+          ],
+          "type": "polygon",
+          "representation": "2D",
+          "source": "https://www.sedecatastro.gob.es & https://web.gencat.cat/ca/inici",
+          "scale": "detailed",
+          "units": "N/A",
+          "description": "Potential energy excess per building at night and categorization of each of them, from 0:00 to 5:00, during the summer period.",
+          "interpolation": false,
+          "paint": {
+            "property": "Category",
+            "stops": [
+              [ "High_consumer", "#DC4632"],
+              [ "Mid_consumer", "#F2915C"],
+              [ "Mid_producer", "#77B4D5"],
+              [ "High_producer", "#0571B0"]
+            ]
+          },
+          "legend": [
+            {
+              "color": "#DC4632",
+              "stop": "High-consumer(+1000kWh)"
+            },
+	        {
+              "color": "#F2915C",
+              "stop": "Consumer"
+            },
+	        {
+              "color": "#77B4D5",
+              "stop": "Producer"
+            },
+            {
+              "color": "#0571B0",
+              "stop": "High-producer(+1000kWh)"
+            }
+          ],
+          "interactable": {
+            "status": true,
+            "text": "BUILDING INFORMATION"
+          },
+          "image": "Energy_balance-summer.png"
+        },
+        {
+          "name": "Morning Balance",
+          "mapID": "internetofbuildings2021.bbg159qf",
+          "mapboxSrc": [
+            "Energy-exchange_Summer_6-11am-2xe4p0"
+          ],
+          "type": "polygon",
+          "representation": "2D",
+          "source": "https://www.sedecatastro.gob.es & https://web.gencat.cat/ca/inici",
+          "scale": "detailed",
+          "units": "N/A",
+          "description": "Potential energy excess per building in the morning and categorization of each of them, from 6:00 to 11:00, during the summer period.",
+          "interpolation": false,
+          "paint": {
+            "property": "Category",
+            "stops": [
+              [ "High_consumer", "#DC4632"],
+              [ "Mid_consumer", "#F2915C"],
+              [ "Mid_producer", "#77B4D5"],
+              [ "High_producer", "#0571B0"]
+            ]
+          },
+          "legend": [
+            {
+              "color": "#DC4632",
+              "stop": "High-consumer(+1000kWh)"
+            },
+	        {
+              "color": "#F2915C",
+              "stop": "Consumer"
+            },
+	        {
+              "color": "#77B4D5",
+              "stop": "Producer"
+            },
+            {
+              "color": "#0571B0",
+              "stop": "High-producer(+1000kWh)"
+            }
+          ],
+          "interactable": {
+            "status": true,
+            "text": "BUILDING INFORMATION"
+          },
+          "image": "Energy_balance-summer.png"
+        },
+        {
+          "name": "Afternoon Balance",
+          "mapID": "internetofbuildings2021.54tzbkpy",
+          "mapboxSrc": [
+            "Energy-exchange_Summer_12-17p-8ew66d"
+          ],
+          "type": "polygon",
+          "representation": "2D",
+          "source": "https://www.sedecatastro.gob.es & https://web.gencat.cat/ca/inici",
+          "scale": "detailed",
+          "units": "N/A",
+          "description": "Potential energy excess per building in the afternoon and categorization of each of them, from 12:00 to 17:00, during the summer period.",
+          "interpolation": false,
+          "paint": {
+            "property": "Category",
+            "stops": [
+              [ "High_consumer", "#DC4632"],
+              [ "Mid_consumer", "#F2915C"],
+              [ "Mid_producer", "#77B4D5"],
+              [ "High_producer", "#0571B0"]
+            ]
+          },
+          "legend": [
+            {
+              "color": "#DC4632",
+              "stop": "High-consumer(+1000kWh)"
+            },
+	        {
+              "color": "#F2915C",
+              "stop": "Consumer"
+            },
+	        {
+              "color": "#77B4D5",
+              "stop": "Producer"
+            },
+            {
+              "color": "#0571B0",
+              "stop": "High-producer(+1000kWh)"
+            }
+          ],
+          "interactable": {
+            "status": true,
+            "text": "BUILDING INFORMATION"
+          },
+          "image": "Energy_balance-summer.png"
+        },
+        {
+          "name": "Evening Balance",
+          "mapID": "internetofbuildings2021.d9zet7q2",
+          "mapboxSrc": [
+            "Energy-exchange_Summer_18-23p-cniyt8"
+          ],
+          "type": "polygon",
+          "representation": "2D",
+          "source": "https://www.sedecatastro.gob.es & https://web.gencat.cat/ca/inici",
+          "scale": "detailed",
+          "units": "N/A",
+          "description": "Potential energy excess per building in the evening and categorization of each of them, from 18:00 to 23:00, during the summer period.",
+          "interpolation": false,
+          "paint": {
+            "property": "Category",
+            "stops": [
+              [ "High_consumer", "#DC4632"],
+              [ "Mid_consumer", "#F2915C"],
+              [ "Mid_producer", "#77B4D5"],
+              [ "High_producer", "#0571B0"]
+            ]
+          },
+          "legend": [
+            {
+              "color": "#DC4632",
+              "stop": "High-consumer(+1000kWh)"
+            },
+	        {
+              "color": "#F2915C",
+              "stop": "Consumer"
+            },
+	        {
+              "color": "#77B4D5",
+              "stop": "Producer"
+            },
+            {
+              "color": "#0571B0",
+              "stop": "High-producer(+1000kWh)"
+            }
+          ],
+          "interactable": {
+            "status": true,
+            "text": "BUILDING INFORMATION"
+          },
+          "image": "Energy_balance-summer.png"
+        },
+        {
+          "name": "TOTAL Balance",
+          "mapID": "internetofbuildings2021.29rv5v1r",
+          "mapboxSrc": [
+            "Energy-exchange_Summer_total-5i0jbs"
+          ],
+          "type": "polygon",
+          "representation": "2D",
+          "source": "https://www.sedecatastro.gob.es & https://web.gencat.cat/ca/inici",
+          "scale": "detailed",
+          "units": "N/A",
+          "description": "Total potential energy excess per building per day and categorization of each of them, during the summer period.",
+          "interpolation": false,
+          "paint": {
+            "property": "Category",
+            "stops": [
+              [ "High_consumer", "#DC4632"],
+              [ "Mid_consumer", "#F2915C"],
+              [ "Mid_producer", "#77B4D5"],
+              [ "High_producer", "#0571B0"]
+            ]
+          },
+          "legend": [
+            {
+              "color": "#DC4632",
+              "stop": "High-consumer(+1000kWh)"
+            },
+	        {
+              "color": "#F2915C",
+              "stop": "Consumer"
+            },
+	        {
+              "color": "#77B4D5",
+              "stop": "Producer"
+            },
+            {
+              "color": "#0571B0",
+              "stop": "High-producer(+1000kWh)"
+            }
+          ],
+          "interactable": {
+            "status": true,
+            "text": "BUILDING INFORMATION"
+          },
+          "image": "Energy_balance-summer.png"
+        }
+      ]
+    }
+  ]
+}
