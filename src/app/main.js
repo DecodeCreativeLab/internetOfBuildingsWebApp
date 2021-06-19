@@ -35,16 +35,20 @@ dataLayersBtn.addEventListener("click", function () {
 methodologyBtn.addEventListener("click", function () {
   closeAllOverlays()
   document.querySelector("#methodology").classList.remove("hidden");
+  document.querySelector("#side-drawer").classList.add("hidden");
 });
 
 challengeBtn.addEventListener("click", function () {
   closeAllOverlays()
   document.querySelector("#challenge").classList.remove("hidden");
+  document.querySelector("#side-drawer").classList.add("hidden");
+
 });
 
 proposalBtn.addEventListener("click", function () {
   closeAllOverlays()
   document.querySelector("#proposal").classList.remove("hidden");
+  document.querySelector("#side-drawer").classList.add("hidden");
 });
 
 menuBtn.addEventListener("click", function () {
@@ -240,7 +244,7 @@ function createLegend(layer) {
     //colours - gradient
     let colourString = "";
     layer.legend.forEach((colour, i) => {
-      if (i > 0 && layer.interpolation) colourString += `${layer.legend[i - 1].color} ${remap(parseFloat(layer.legend[i - 1].stop),parseFloat(layer.legend[0].stop),parseFloat(layer.legend[layer.legend.length-1].stop),0,100)}%, ${colour.color} ${remap(parseFloat(colour.stop),parseFloat(layer.legend[0].stop),parseFloat(layer.legend[layer.legend.length-1].stop),0,100)}%, `
+      if (i > 0 && layer.interpolation) colourString += `${layer.legend[i - 1].color} ${remap(parseFloat(layer.legend[i - 1].stop), parseFloat(layer.legend[0].stop), parseFloat(layer.legend[layer.legend.length - 1].stop), 0, 100)}%, ${colour.color} ${remap(parseFloat(colour.stop), parseFloat(layer.legend[0].stop), parseFloat(layer.legend[layer.legend.length - 1].stop), 0, 100)}%, `
       else colourString += `${colour.color} ${colour.stop}%, `
     });
     legendClone.querySelector(".gradient").style.background = `linear-gradient(to right, ${colourString.slice(0, -2)})`;
@@ -254,17 +258,17 @@ function createLegend(layer) {
       let rec = document.createElement('div')
       rec.classList.add('legend-rec')
       rec.style.backgroundColor = colour.color
-      legendClone.querySelector("#max").innerHTML='<i class="material-icons-outlined" title="hover over the colours"> touch_app </i>'
+      legendClone.querySelector("#max").innerHTML = '<i class="material-icons-outlined" title="hover over the colours"> touch_app </i>'
       rec.addEventListener('mouseover', (ev) => {
-        
+
         let tooltip = document.querySelector('.legend-tooltip')
-        tooltip.classList.remove('hidden') 
+        tooltip.classList.remove('hidden')
         tooltip.innerText = colour.stop;
-        tooltip.style.top = rec.getBoundingClientRect().y-24+ 'px'
+        tooltip.style.top = rec.getBoundingClientRect().y - 24 + 'px'
         tooltip.style.left = rec.getBoundingClientRect().x + 'px'
       })
       rec.addEventListener('mouseleave', () => {
-        document.querySelector('.legend-tooltip').classList.add('hidden') 
+        document.querySelector('.legend-tooltip').classList.add('hidden')
       })
       legendClone.querySelector(".gradient").appendChild(rec)
     }
@@ -273,7 +277,7 @@ function createLegend(layer) {
   legend.appendChild(legendClone)
 }
 
-function remap (value,  from1, to1,  from2,  to2) {
+function remap(value, from1, to1, from2, to2) {
   return (value - from1) / (to1 - from1) * (to2 - from2) + from2;
 }
 //#endregion
@@ -313,6 +317,7 @@ function setupCloseButtons() {
   xbtns.map(x => {
     x.addEventListener("click", () => {
       x.parentElement.classList.add('hidden')
+      document.querySelector("#side-drawer").classList.remove("hidden");
     })
   })
 }
