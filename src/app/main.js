@@ -108,7 +108,8 @@ function addClusterToDropdown(clusterData) {
     closeAllLayers();
     closeAllOverlays()
     UT.clearList(legend);
-    [...dataLayerPanel.querySelectorAll(".cluster")].map(x => x.classList.add("hidden"))
+    document.querySelector('.main-controls').classList.remove("hidden");
+    [...dataLayerPanel.querySelectorAll(".cluster")].map(x => x.classList.add("hidden"));
     document.getElementById(clusterData.uuid).classList.remove("hidden");
     document.querySelector('.dropbtn').innerHTML = `${clusterData.group}  <i class="fa fa-caret-down"></i>`;
     generateOverlays(clusterData)
