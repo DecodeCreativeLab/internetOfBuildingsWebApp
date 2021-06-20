@@ -81,10 +81,6 @@ export function populateLayers(data) {
         let parentLayer = createParentLayer(layer, clusterGroup)
         layer.sublayers.forEach(sublayer => {
           sublayer.uuid = uuidv4()
-          if (!sublayer.name) {
-            console.log(layer)
-            debugger
-          }
           addLayerToInterface(sublayer, parentLayer);
         })
       }
@@ -255,7 +251,6 @@ function createLegend(layer) {
       else colourString += `${colour.color} ${colour.stop}%, `
     });
     legendClone.querySelector(".gradient").style.background = `linear-gradient(to right, ${colourString.slice(0, -2)})`;
-    console.log(`linear-gradient(to right, ${colourString.slice(0, -2)})`)
     //legend values
     legendClone.querySelector("#min").innerText = layer.legend[0].stop;
     legendClone.querySelector("#max").innerText = layer.legend[layer.legend.length - 1].stop;

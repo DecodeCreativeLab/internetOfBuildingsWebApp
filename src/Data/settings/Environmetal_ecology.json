@@ -8,12 +8,12 @@
   },
   "methodology": {
     "description": "Enable users to incrementally adapt the urban infrastructure to meet the continuous challenges of climate change.",
-    "image": "EnviromentalEcology_Methodology",
+    "image": "EnviromentalEcology_Methodology.png",
     "video": "video_url"
   },
   "challenge": {
     "description": "On the context of a changing climate, notions of a stable urban climate are update. This work aims at developing and validating a iterative methodology that would allow for an incremental approach to designing and adapting the bioclimátic infrastructures within the built environment",
-    "image": "EnviromentalEcology_Challenge",
+    "image": "EnviromentalEcology_Challenge.png",
     "video": "video_url"
   },
   "layers": [
@@ -68,7 +68,7 @@
             "status": false,
             "text": false
           },
-          "icon":"EnviromentalEcology_SR2021"
+          "icon":"EnviromentalEcology_SR2021.png"
         },
         {
           "name": "2050",
@@ -118,7 +118,7 @@
             "status": false,
             "text": "SolarRadiation_2100"
           },
-          "icon":"EnviromentalEcology_SR2050"
+          "icon":"EnviromentalEcology_SR2050.png"
         },
         {
           "name": "2100",
@@ -168,7 +168,7 @@
             "status": false,
             "text": "SolarRadiation_2100"
           },
-          "icon":"EnviromentalEcology_SR2100"
+          "icon":"EnviromentalEcology_SR2100.png"
         },
       {
         "name": "Intervention",
@@ -260,7 +260,7 @@
           "status": false,
           "text": "SolarRadiation_2100"
         },
-        "icon":"EnviromentalEcology_SR2100"
+        "icon":"EnviromentalEcology_SR2100.png"
       },
       {
         "name": "2050 adapted",
@@ -310,7 +310,7 @@
           "status": false,
           "text": false
         },
-        "icon":"EnviromentalEcology_SR2050"
+        "icon":"EnviromentalEcology_SR2050.png"
       },
       {
         "name": "2021 adapted",
@@ -360,7 +360,7 @@
           "status": false,
           "text": "SolarRadiation_2100"
         },
-        "icon":"EnviromentalEcology_SR2021"
+        "icon":"EnviromentalEcology_SR2021.png"
       }
     ]
   },
@@ -447,7 +447,7 @@
             "status": false, 
             "text": "Spider Diagram Cluster01"
           },
-          "icon":"EnviromentalEcology_OTM2021" 
+          "icon":"EnviromentalEcology_OTM2021.png" 
         },
         {
           "name": "2050", 
@@ -529,7 +529,7 @@
             "status": false, 
             "text": false
           },
-          "icon":"EnviromentalEcology_OTM2050"
+          "icon":"EnviromentalEcology_OTM2050.png"
         },
         {
           "name": "2100", 
@@ -611,7 +611,7 @@
             "status": false, 
             "text": "false"
           },
-          "icon":"EnviromentalEcology_OTM2100"
+          "icon":"EnviromentalEcology_OTM2100.png"
         },
         {
           "name": "Intervention",
@@ -735,7 +735,7 @@
           "status": false, 
           "text": "false"
         },
-        "icon":"EnviromentalEcology_OTM2100"
+        "icon":"EnviromentalEcology_OTM2100.png"
       },
       {
         "name": "2050 adapted",
@@ -817,7 +817,7 @@
           "status": false, 
           "text": false
         },
-        "icon":"EnviromentalEcology_OTM2050"
+        "icon":"EnviromentalEcology_OTM2050.png"
       },
       {
         "name": "2021 adapted",
@@ -899,7 +899,7 @@
           "status": false, 
           "text": "Spider Diagram Cluster01"
         },
-        "icon":"EnviromentalEcology_OTM2021" 
+        "icon":"EnviromentalEcology_OTM2021.png" 
       }
     ]
   },
@@ -958,7 +958,7 @@
             "status": false,
             "text": "n/a"
           },
-          "icon":"EnviromentalEcology_WR2021"
+          "icon":"EnviromentalEcology_WR2021.png"
         },
         {
           "name": "2050",
@@ -1012,7 +1012,7 @@
             "status": false,
             "text": "n/a"
           },
-          "icon":"EnviromentalEcology_WR2050"
+          "icon":"EnviromentalEcology_WR2050.png"
         },
         {
           "name": "2100",
@@ -1066,7 +1066,7 @@
             "status": false,
             "text": "n/a"
           },
-          "icon":"EnviromentalEcology_WR2100"
+          "icon":"EnviromentalEcology_WR2100.png"
         },
         {
         "name": "Intervention",
@@ -1162,7 +1162,7 @@
           "status": false,
           "text": "n/a"
         },
-        "icon":"EnviromentalEcology_WR2100"
+        "icon":"EnviromentalEcology_WR2100.png"
       },
       {
         "name": "2050 adapted",
@@ -1216,7 +1216,7 @@
           "status": false,
           "text": "n/a"
         },
-        "icon":"EnviromentalEcology_WR2050"
+        "icon":"EnviromentalEcology_WR2050.png"
       },
       {
         "name": "2021 adapted",
@@ -1270,7 +1270,7 @@
           "status": false,
           "text": "n/a"
         },
-        "icon":"EnviromentalEcology_WR2021"
+        "icon":"EnviromentalEcology_WR2021.png"
       }
     ]
   }
