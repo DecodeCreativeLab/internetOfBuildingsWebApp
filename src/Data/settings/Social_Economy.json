@@ -64,7 +64,7 @@
             "status": true, 
             "text": "Affordability Values"
           },
-          "image": "false" ,
+          "image": false,
           "icon":"Social_Economy_Affordability.png"
         },
         {
@@ -106,7 +106,8 @@
           "interactable": {
             "status": true, 
             "text": "Mixity Values"
-          },          
+          },
+          "image": false,
           "icon":"Social_Economy_Mixity.png" 
         },
         {
@@ -149,7 +150,7 @@
             "status": true, 
             "text": "Diversity Values"
           },
-          "image": "false",
+          "image": false,
           "icon":"Social_Economy_Diversity.png"
         },
         {
@@ -192,7 +193,7 @@
             "status": true, 
             "text": "Safety Values"
           },
-          "image": "false",
+          "image": false,
           "icon":"Social_Economy_Safety.png"
         },
         {
@@ -235,8 +236,8 @@
             "status": true, 
             "text": "Attractiveness Values"
           },
-          "image": "false",
-          "icon":"Social_Economy_Attractiveness.png"
+          "image": false,
+          "icon":"Social_Economy_Attractivness.png"
         },
         {
           "name": "Connectivity", 
@@ -272,7 +273,7 @@
             "status": true, 
             "text": "Connectivity Values"
           },
-          "image": "false",
+          "image": false,
           "icon":"Social_Economy_Connectivity.png"
         }
       ]
@@ -1036,7 +1037,7 @@
             "status": true, 
             "text": "Cluster ID"
           },
-          "image": "false",
+          "image": false,
           "icon":"Social_Economy_Clustering.png"
         }
       ]
@@ -1124,7 +1125,7 @@
             "status": true, 
             "text": "People Distribution"
           },
-          "image": "false",
+          "image": false,
           "icon":"Social_Economy_People Distribution.png"
         }
       ]
@@ -1241,7 +1242,7 @@
             "status": true, 
             "text": "Sociability values"
           },
-          "image": "false",
+          "image": false,
           "icon":"Social_Economy_Sociability Map.png"
         }
       ]

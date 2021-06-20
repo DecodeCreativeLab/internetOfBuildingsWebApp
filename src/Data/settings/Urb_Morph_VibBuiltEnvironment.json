@@ -8,12 +8,12 @@
     },
     "methodology": {
         "description": "Urban Vibrancy is analysed, first for the built environment using several metrics and then for the ground level based on site visits and observations. To have an integrative idea towards total vibrancy levels, all the layers are combined into a single map where all necessary interventions become more visible to be gathered under the catalogue of proposals. Lastly, with an interface, ideas from the development team and the community members come together for decision making.",
-        "image": "UrbanMorphology_methodology.png",
+        "image": "Urban_Morphology_Methodology.png",
         "video": "video_url"
     },
     "challenge": {
         "description": "Using morphological metrics, main challenge of the project is to promote urban vibrancy, which the study associated with activity intensity, the diversity of land-use configurations, and the accessibility of a place.  It mainly refers to updated plan decisions for 22@ District by providing all the layers of analysis, development and proposal for the radical change that awaits the area in the near future.",
-        "image": "challenges_morphology-01.png",
+        "image": "Urban_Morphology_Challenges.png",
         "video": "video_url"
     },
     "layers": [
@@ -88,7 +88,7 @@
                         "status": true, 
                         "text": "Vibrancy Built Environment: "
                     },
-                    "image": "----------" 
+                    "image": "Urban_Morphology_Vibrancy_of_built_environment.png" 
                 },
                 {
                     "name": "Mixture of points of interest",
@@ -158,7 +158,7 @@
                         "status": true, 
                         "text": "Mixture of points of interest: "
                     },
-                    "image": "----------" 
+                    "image": "Urban_Morphology_Mixture_of_Points_of_Interest.png" 
                 },
                 {
                     "name": "Mix of transport POI",
@@ -220,7 +220,7 @@
                         "status": true, 
                         "text": "Mixture of Transport POI : "
                     },
-                    "image": false 
+                    "image": "Urban_Morphology_Density_of_Transport_Points_of_Interest.png" 
                 },
                 {
                     "name": "Mix of Residential POI",
@@ -286,7 +286,7 @@
                         "status": true, 
                         "text": "Mixture of Residential POI : "
                     },
-                    "image": false 
+                    "image": "Urban_Morphology_Density_of_Residential_Points_of_Interest.png" 
                 },
                 {
                     "name": "Mix of Outdoor POI",
@@ -336,7 +336,7 @@
                         "status": true, 
                         "text": "Mixture of Outdoor POI : "
                     },
-                    "image": false 
+                    "image": "Urban_Morphology_Density_of_Recreational_Points_of_Interest.png" 
                 },
                 {
                     "name": "Mix of Education POI",
@@ -394,7 +394,7 @@
                         "status": true, 
                         "text": "Mixture of Education POI : "
                     },
-                    "image": false 
+                    "image": "Urban_Morphology_Density_of_Educational_Points_of_Interest.png"
                 },
                 {
                     "name": "Mix of Commerce POI",
@@ -460,7 +460,7 @@
                         "status": true, 
                         "text": "Mixture of Commerce POI : "
                     },
-                    "image": false 
+                    "image": "Urban_Morphology_Density_of_Commertial_Points_of_Interest.png" 
                 },
                 {
                     "name": "Density of Choice",
@@ -526,7 +526,7 @@
                         "status": true, 
                         "text": "Density of Choice : "
                     },
-                    "image": false 
+                    "image": "Urban_Morphology_Density_of_Choice.png" 
                 },
                 {
                     "name": "Angular Integration",
@@ -592,7 +592,7 @@
                         "status": true, 
                         "text": "Angular Integration : "
                     },
-                    "image": false 
+                    "image": "Urban_Morphology_angular_integration.png"
                 },
                 {
                     "name": "Density Road Length",
@@ -658,7 +658,7 @@
                         "status": true, 
                         "text": "Density Road Length : "
                     },
-                    "image": false 
+                    "image": "Urban_Morphology_density_of_road_length.png"
                 },
                 {
                     "name": "Density Block Number",
@@ -716,7 +716,7 @@
                         "status": true, 
                         "text": "Density Block Number : "
                     },
-                    "image": false 
+                    "image": "Urban_Morphology_density_of_blocks_number.png"
                 },
                 {
                     "name": "Mix Building Age",
@@ -782,7 +782,7 @@
                         "status": true, 
                         "text": "Mix Building Age : "
                     },
-                    "image": false 
+                    "image": "Urban_Morphology_Mixing_of_building_age.png" 
                 },
                 {
                     "name": "Density Building Cover Ratio",
@@ -848,7 +848,7 @@
                         "status": true, 
                         "text": "Densitity Building Cover Ratio : "
                     },
-                    "image": false 
+                    "image": "Urban_Morphology_vibrancy_of_building_cover_ratio.png" 
                 },
                 {
                     "name": "Density Building Area Ratio",
@@ -914,7 +914,7 @@
                         "status": true, 
                         "text": "Densitity Building Area Ratio : "
                     },
-                    "image": false 
+                    "image": "Urban_Morphology_density_of_building_area_ratio.png" 
                 }
             ]
         },
@@ -993,7 +993,7 @@
                         "status": true, 
                         "text": "Total Vibrancy Ground Level: "
                     },
-                    "image": "----------" 
+                    "image": "Urban_Morphology_groundfloor_level.png" 
                 }
             ]
         },
@@ -1072,7 +1072,7 @@
                         "status": true, 
                         "text": "Total Urban Vibrancy: "
                     },
-                    "image": "----------" 
+                    "image": "Urban_Morphology_Urban_Vibrancy.png" 
                 }
             ]
         }

@@ -3,12 +3,12 @@
   "icon": "image_id_in_shared_folder",
   "challenge": {
     "description": "The main challenge this project addresses is creating a city with a healthier mobility network. In the last years, health concerns have been an increasing focus of municipalities. Yet, street design has not been used as a driver of change towards a healthier city. By analyzing mobility flows and different health aspects, the project allows planners to identify risk areas in the network and design specific interventions that can address each of these risks.",
-    "image": "mobility_global_challenge.svg",
+    "image": "mobility_global_challenge.png",
     "video": "video_url"
   },
   "methodology": {
     "description": "To address the identified challenges, this project methodology starts by studying two aspects of a healthy network: agent flows and network health. First, the existing road network is segmented and these segments are then scored based on 3 agent preferences (pedestrian, bike and car) and 3 health indicators (physical, mental, and social). The resulting scores provide us with the Agent flows and the Health scores respectively.The results from the two scores are combined and evaluated to identify risk areas (areas with lowest health and highest flow). An intervention is then suggested from a catalogue of predesigned health pills.",
-    "image": "mobility_global_methodology.svg",
+    "image": "mobility_global_methodology.png",
     "video": "video_url"
   },
   "proposal": {

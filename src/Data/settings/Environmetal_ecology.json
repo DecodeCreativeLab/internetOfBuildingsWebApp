@@ -8,12 +8,12 @@
   },
   "methodology": {
     "description": "Enable users to incrementally adapt the urban infrastructure to meet the continuous challenges of climate change.",
-    "image": "EE_Methodology.png",
+    "image": "EnviromentalEcology_Methodology",
     "video": "video_url"
   },
   "challenge": {
     "description": "On the context of a changing climate, notions of a stable urban climate are update. This work aims at developing and validating a iterative methodology that would allow for an incremental approach to designing and adapting the bioclimátic infrastructures within the built environment",
-    "image": "EE_Challenges.png",
+    "image": "EnviromentalEcology_Challenge",
     "video": "video_url"
   },
   "layers": [
@@ -66,9 +66,9 @@
           ],
           "interactable": {
             "status": false,
-            "text": "SolarRadiation_2100"
+            "text": false
           },
-          "icon":"SolarRadiation_2100"
+          "icon":"EnviromentalEcology_SR2021"
         },
         {
           "name": "2050",
@@ -118,7 +118,7 @@
             "status": false,
             "text": "SolarRadiation_2100"
           },
-          "icon":"SolarRadiation_2100"
+          "icon":"EnviromentalEcology_SR2050"
         },
         {
           "name": "2100",
@@ -168,10 +168,52 @@
             "status": false,
             "text": "SolarRadiation_2100"
           },
-          "icon":"SolarRadiation_2100"
+          "icon":"EnviromentalEcology_SR2100"
         },
-        {
-        "name": "2100 adapted",
+      {
+        "name": "Intervention",
+        "mapID": "internetofbuildings2021.6f66m92k",
+        "mapboxSrc": [
+          "Enviromental_Ecology_Trees_I-3a2s2u"
+        ],
+        "type": "point",
+        "representation": "2D",
+        "source": "http://www.iaacblog.com/programs/enviromental-ecology-adapting-barcelona/",
+        "scale": "large",
+        "units": "Trees",
+        "description": "Current and new tree proposal",
+        "interpolation": false,
+        "paint": {
+          "property": "Existing-N",
+          "stops": [
+            [
+              0,
+              "#64a535"
+            ],
+            [
+              1,
+              "#64a5cd"
+            ]
+          ]
+        },
+        "legend": [
+          {
+            "color": "#64a535",
+            "stop": "Existing_Trees"
+          },
+          {
+            "color": "#64a5cd",
+            "stop": "Proposed_Trees"
+          }
+        ],
+        "interactable": {
+          "status": false,
+          "text": false
+        },
+        "icon":false
+      },
+      {
+          "name": "2100 adapted",
         "mapID": "internetofbuildings2021.2j60csba",
         "mapboxSrc": [
           "Enviromental_Ecology_DSR_00I-awzu55"
@@ -218,7 +260,7 @@
           "status": false,
           "text": "SolarRadiation_2100"
         },
-        "icon":"SolarRadiation_2100"
+        "icon":"EnviromentalEcology_SR2100"
       },
       {
         "name": "2050 adapted",
@@ -268,7 +310,7 @@
           "status": false,
           "text": false
         },
-        "icon":"SolarRadiation_2050"
+        "icon":"EnviromentalEcology_SR2050"
       },
       {
         "name": "2021 adapted",
@@ -318,7 +360,7 @@
           "status": false,
           "text": "SolarRadiation_2100"
         },
-        "icon":"SolarRadiation_2100"
+        "icon":"EnviromentalEcology_SR2021"
       }
     ]
   },
@@ -333,7 +375,7 @@
           ],
           "type": "polygon", 
           "representation": "2D",       
-          "source": "https://weatherspark.com/y/47213/Average-Weather-in-Barcelona-Spain-Year-Round",    
+          "source": false,    
           "scale": "large",          
           "units": "℃", 
           "description": "The map shows variation of temperature in public space",
@@ -405,8 +447,7 @@
             "status": false, 
             "text": "Spider Diagram Cluster01"
           },
-          "image": "OutdoorThermalComfort_2021",
-          "icon":"OutdoorThermalComfort_2021" 
+          "icon":"EnviromentalEcology_OTM2021" 
         },
         {
           "name": "2050", 
@@ -416,7 +457,7 @@
           ],
           "type": "polygon", 
           "representation": "2D",       
-          "source": "http://aqua.upc.es/anywhere-catalogue-v2/?product=universal-thermal-climate-index-utci-uor",
+          "source": false,
           "scale": "large",            
           "units": "℃", 
           "description": "The map shows variation of temperature in public space", 
@@ -488,8 +529,7 @@
             "status": false, 
             "text": false
           },
-          "image": "OutdoorThermalComfort_2050",
-          "icon":"OutdoorThermalComfort_2050"
+          "icon":"EnviromentalEcology_OTM2050"
         },
         {
           "name": "2100", 
@@ -499,7 +539,7 @@
           ],
           "type": "polygon", 
           "representation": "2D",       
-          "source": "http://aqua.upc.es/anywhere-catalogue-v2/?product=universal-thermal-climate-index-utci-uor",
+          "source":false,
           "scale": "large",            
           "units": "℃", 
           "description": "The map shows variation of temperature in public space", 
@@ -571,18 +611,59 @@
             "status": false, 
             "text": "false"
           },
-          "image": "OutdoorThermalComfort_2100",
-          "icon":"OutdoorThermalComfort_2100"
+          "icon":"EnviromentalEcology_OTM2100"
         },
         {
-        "name": "2100 adapted",
+          "name": "Intervention",
+          "mapID": "internetofbuildings2021.6f66m92k",
+          "mapboxSrc": [
+            "Enviromental_Ecology_Trees_I-3a2s2u"
+          ],
+          "type": "point",
+          "representation": "2D",
+          "source": "http://www.iaacblog.com/programs/enviromental-ecology-adapting-barcelona/",
+          "scale": "large",
+          "units": "Trees",
+          "description": "Current and new tree proposal",
+          "interpolation": false,
+          "paint": {
+            "property": "Existing-N",
+            "stops": [
+              [
+                0,
+                "#64a535"
+              ],
+              [
+                1,
+                "#64a5cd"
+              ]
+            ]
+          },
+          "legend": [
+            {
+              "color": "#64a535",
+              "stop": "Existing_Trees"
+            },
+            {
+              "color": "#64a5cd",
+              "stop": "Proposed_Trees"
+            }
+          ],
+          "interactable": {
+            "status": false,
+            "text": false
+          },
+          "icon":false
+        },
+        {
+          "name": "2100 adapted",
         "mapID": "internetofbuildings2021.0wnscsxy",
         "mapboxSrc": [
           "Enviromental_Ecology_OTM_00I-cscecu"
         ],
         "type": "polygon", 
         "representation": "2D",       
-        "source": "http://aqua.upc.es/anywhere-catalogue-v2/?product=universal-thermal-climate-index-utci-uor",
+        "source": false,
         "scale": "large",            
         "units": "℃", 
         "description": "The map shows variation of temperature in public space", 
@@ -654,8 +735,7 @@
           "status": false, 
           "text": "false"
         },
-        "image": "OutdoorThermalComfort_2100",
-        "icon":"OutdoorThermalComfort_2100"
+        "icon":"EnviromentalEcology_OTM2100"
       },
       {
         "name": "2050 adapted",
@@ -665,7 +745,7 @@
         ],
         "type": "polygon", 
         "representation": "2D",       
-        "source": "http://aqua.upc.es/anywhere-catalogue-v2/?product=universal-thermal-climate-index-utci-uor",
+        "source": false,
         "scale": "large",            
         "units": "℃", 
         "description": "The map shows variation of temperature in public space", 
@@ -737,8 +817,7 @@
           "status": false, 
           "text": false
         },
-        "image": "OutdoorThermalComfort_2050",
-        "icon":"OutdoorThermalComfort_2050"
+        "icon":"EnviromentalEcology_OTM2050"
       },
       {
         "name": "2021 adapted",
@@ -748,7 +827,7 @@
         ],
         "type": "polygon", 
         "representation": "2D",       
-        "source": "https://weatherspark.com/y/47213/Average-Weather-in-Barcelona-Spain-Year-Round",    
+        "source": false,    
         "scale": "large",          
         "units": "℃", 
         "description": "The map shows variation of temperature in public space",
@@ -820,8 +899,7 @@
           "status": false, 
           "text": "Spider Diagram Cluster01"
         },
-        "image": "OutdoorThermalComfort_2021",
-        "icon":"OutdoorThermalComfort_2021" 
+        "icon":"EnviromentalEcology_OTM2021" 
       }
     ]
   },
@@ -880,7 +958,7 @@
             "status": false,
             "text": "n/a"
           },
-          "icon":"WaterRunoff_2021"
+          "icon":"EnviromentalEcology_WR2021"
         },
         {
           "name": "2050",
@@ -934,7 +1012,7 @@
             "status": false,
             "text": "n/a"
           },
-          "icon":"WaterRunoff_2050"
+          "icon":"EnviromentalEcology_WR2050"
         },
         {
           "name": "2100",
@@ -988,9 +1066,51 @@
             "status": false,
             "text": "n/a"
           },
-          "icon":"WaterRunoff_2100"
+          "icon":"EnviromentalEcology_WR2100"
         },
         {
+        "name": "Intervention",
+        "mapID": "internetofbuildings2021.dwtc9rzi",
+        "mapboxSrc": [
+          "Environmental_Ecology_floodar-7bes4n"
+        ],
+        "type":"polygon", 
+        "representation": "2D",       
+        "source": "http://www.iaacblog.com/programs/enviromental-ecology-adapting-barcelona/",    
+        "scale": "large",          
+        "units": "m2",
+        "description": "Area of water collection",
+        "interpolation": true,
+        "paint": {
+          "property": "area",
+          "stops": [
+            [
+              9389,
+              "#0096fc"
+            ],
+            [
+              19867,
+              "#3500c9"
+            ]
+          ]
+        },
+      "legend": [
+        {
+          "color": "#0096fc",
+          "stop": "9389"
+        },
+        {
+          "color": "#3500c9",
+          "stop": "19867"
+        }
+        ],
+        "interactable": {
+          "status": false,
+          "text": false
+        },
+        "icon":false
+      },
+      {
         "name": "2100 adapted",
         "mapID": "internetofbuildings2021.06cy37pr",
         "mapboxSrc": [
@@ -1042,7 +1162,7 @@
           "status": false,
           "text": "n/a"
         },
-        "icon":"WaterRunoff_2100"
+        "icon":"EnviromentalEcology_WR2100"
       },
       {
         "name": "2050 adapted",
@@ -1096,7 +1216,7 @@
           "status": false,
           "text": "n/a"
         },
-        "icon":"WaterRunoff_2050"
+        "icon":"EnviromentalEcology_WR2050"
       },
       {
         "name": "2021 adapted",
@@ -1150,7 +1270,7 @@
           "status": false,
           "text": "n/a"
         },
-        "icon":"WaterRunoff_2021"
+        "icon":"EnviromentalEcology_WR2021"
       }
     ]
   }
