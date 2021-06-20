@@ -81,7 +81,7 @@ export function populateLayers(data) {
         let parentLayer = createParentLayer(layer, clusterGroup)
         layer.sublayers.forEach(sublayer => {
           sublayer.uuid = uuidv4()
-          if(!sublayer.name){
+          if (!sublayer.name) {
             console.log(layer)
             debugger
           }
@@ -89,7 +89,7 @@ export function populateLayers(data) {
         })
       }
       else addLayerToInterface(layer, clusterGroup);
-      
+
     });
   })
 }
@@ -299,12 +299,18 @@ function generateOverlays(cluster) {
   for (let overlay of overlays) {
     //set text
     overlay.querySelector('#overlay-description').innerText = cluster[overlay.id].description;
-    //set image
-    const imageContainer = overlay.querySelector('.image-container');
-    imageContainer.style.backgroundImage = `url(images/${cluster[overlay.id].image})`
-    imageContainer.style.backgroundPosition = 'center'
-    imageContainer.style.backgroundSize = 'contain'
-    imageContainer.style.backgroundRepeat = 'no-repeat'
+    if (overlay.id == "proposal") {
+      overlay.querySelector('#overlay-video').src = cluster[overlay.id].video;
+    }
+    else {
+      //set image
+      const imageContainer = overlay.querySelector('.image-container');
+      imageContainer.style.backgroundImage = `url(images/${cluster[overlay.id].image})`
+      imageContainer.style.backgroundPosition = 'center'
+      imageContainer.style.backgroundSize = 'contain'
+      imageContainer.style.backgroundRepeat = 'no-repeat'
+    }
+
   }
 }
 
