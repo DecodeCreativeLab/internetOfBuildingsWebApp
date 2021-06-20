@@ -262,7 +262,7 @@
           "source": "",
           "scale": "large",
           "units": "no. pedestrian agents",
-          "description": "This map shows the simulated pedestrian flows in the area. Using footfall data provided by InAtlas, we derived the start and end point of each user. Then taking into account the PEQI (pedestrian agent preference) and the shortest distance the preferred route of each user was simulated using an agent based algorithm. All these flows were then aggregated to form a map for most preferred pedestrian routes for the agents.",
+          "description": "This map shows the simulated pedestrian flows in the area. Using footfall data, we derived the start and end point of each user. Then taking into account the PEQI (pedestrian agent preference) and the shortest distance the preferred route of each user was simulated using an agent based algorithm. All these flows were then aggregated to form a map for most preferred pedestrian routes for the agents.",
           "interpolation": true,
           "paint": {
             "property": "npaths",
@@ -296,7 +296,7 @@
           "source": "",
           "scale": "large",
           "units": "no. bike agents",
-          "description": "This map shows the simulated bike flows in the area. Using footfall data provided by InAtlas, we derived the start and end point of each user. Then taking into account the BEQI (bike agent preference) and the shortest distance the preferred route of each user was simulated using an agent based algorithm. All these flows were then aggregated to form a map for most preferred bike routes for the agents.",
+          "description": "This map shows the simulated bike flows in the area. Using footfall data, we derived the start and end point of each user. Then taking into account the BEQI (bike agent preference) and the shortest distance the preferred route of each user was simulated using an agent based algorithm. All these flows were then aggregated to form a map for most preferred bike routes for the agents.",
           "interpolation": true,
           "paint": {
             "property": "npaths",
@@ -330,7 +330,7 @@
           "source": "",
           "scale": "large",
           "units": "no. vehicle agents",
-          "description": "This map shows the simulated car flows in the area. Using footfall data provided by InAtlas, we derived the start and end point of each user. Then taking into account the VEQI (vehicle agent preference) and the shortest distance the preferred route of each user was simulated using an agent based algorithm. All these flows were then aggregated to form a map for most preferred vehicle routes for the agents.",
+          "description": "This map shows the simulated car flows in the area. Using footfall data, we derived the start and end point of each user. Then taking into account the VEQI (vehicle agent preference) and the shortest distance the preferred route of each user was simulated using an agent based algorithm. All these flows were then aggregated to form a map for most preferred vehicle routes for the agents.",
           "interpolation": true,
           "paint": {
             "property": "npaths",
@@ -369,7 +369,7 @@
           "representation": "2D",
           "source": "",
           "scale": "large",
-          "units": "no. agents",
+          "units": "Dominant flow",
           "description": "Combined flows are the aggregated values of the flows of pedestrians, bikes and vehicles in the network. In other words, only the dominant mode of transport at each segment of the road network is depicted. The colors here represent the 3 different transport modes while the width represents the number of paths.",
           "interpolation": false,
           "paint": {
@@ -406,7 +406,7 @@
           "representation": "2D",
           "source": "",
           "scale": "large",
-          "units": "Health index",
+          "units": "Dominant health risk",
           "description": "Combined healths are the aggregated values of the Physical, Mental and Social healths of the network. In other words, only the lowest health at each segment of the road network is depicted. The colors represent the 3 different health categories while the width represents their value.",
           "interpolation": false,
           "paint": {
@@ -429,7 +429,7 @@
             {"color": "#2effce", "stop": "Mental risk"},
             {"color": "#e0d536", "stop": "Physical risk"},
             {"color": "#bf2dff", "stop": "Social risk"},
-            {"color": "#cccccc", "stop": "Low health risk"}
+            {"color": "#cccccc", "stop": "Low risk"}
           ],
           "interactable": {
             "status": true,
@@ -445,7 +445,7 @@
           "representation": "2D",
           "source": "",
           "scale": "large",
-          "units": "Health index",
+          "units": "Dominant health risk & flow",
           "description": "Flows health are the aggregated values of  the healths, physical, mental and social, combined with the flows, both evaluated for each segment of the network. In other words, only the lowest health of each segment is depicted with the relevant color, while the width of the lines represent the number of paths.",
           "interpolation": false,
           "paint": {
@@ -468,7 +468,7 @@
             {"color": "#2effce", "stop": "Mental risk"},
             {"color": "#e0d536", "stop": "Physical risk"},
             {"color": "#bf2dff", "stop": "Social risk"},
-            {"color": "#cccccc", "stop": "Low health risk"}
+            {"color": "#cccccc", "stop": "Low risk"}
           ],
           "interactable": {
             "status": true,

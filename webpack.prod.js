@@ -10,7 +10,7 @@ const Dotenv = require('dotenv-webpack');
 module.exports = merge(common, {
     mode: "production",
     output: {
-        filename: "[name].[contenthash].js", // Handle cache
+        filename: '[name].[hash:20].js', // Handle cache
         path: path.resolve(__dirname, "dist"),
         clean: true
     },
@@ -50,6 +50,15 @@ module.exports = merge(common, {
             allowEmptyValues: true,
         })
     ],
+    resolve: {
+
+        modules: ['node_modules'],
+
+        alias: {
+            'node_modules': path.join(__dirname, 'node_modules')
+        },
+
+    },
     module: {
         rules: [
             {

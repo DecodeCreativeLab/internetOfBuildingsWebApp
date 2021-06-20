@@ -16,7 +16,7 @@ module.exports = merge(common, {
             template: "./src/template.html",
             inject: true,
             chunks: ['index'],
-            filename: 'app'
+            filename: 'app.html'
         }),
         new HtmlWebpackPlugin({
             template: "./src/landingPageTemplate.html",
