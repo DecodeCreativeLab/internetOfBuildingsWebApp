@@ -24,7 +24,7 @@ module.exports = merge(common, {
                 chunks: ['index'],
                 filename: 'app.html',
                 minify: {
-                    removeAttributeQuotes: true,
+                    removeAttributeQuotes: false,
                     collapseWhitespace: true,
                     removeComments: true
                 }
@@ -50,15 +50,6 @@ module.exports = merge(common, {
             allowEmptyValues: true,
         })
     ],
-    resolve: {
-
-        modules: ['node_modules'],
-
-        alias: {
-            'node_modules': path.join(__dirname, 'node_modules')
-        },
-
-    },
     module: {
         rules: [
             {
@@ -74,5 +65,14 @@ module.exports = merge(common, {
                 loader: "node-loader",
             },
         ]
-    }
+    },
+    resolve: {
+
+        modules: ['node_modules'],
+
+        alias: {
+            'node_modules': path.join(__dirname, 'node_modules')
+        },
+
+    },
 });
