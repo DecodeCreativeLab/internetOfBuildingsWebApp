@@ -1,5 +1,9 @@
 @import "vars";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -56,6 +60,43 @@ footer {
     align-items: center;
 }
 
+.some-page-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.first-column {
+    
+    height: 100px;
+}
+
+.second-column {
+   display: flex;
+   justify-content: center;
+    height: 100px;
+}
+
+.third-column {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+    height: 100px;
+}
+
 .central-alignment {
     display: flex;
     flex-direction: column;
@@ -72,7 +113,7 @@ footer {
     margin: 2rem 25vw 1rem 25vw;
 }
 
-.clusters{
+.clusters {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -152,72 +193,70 @@ hr {
 //     }
 // }
 
-.icon-button{    
+.icon-button {
     border-radius: 50%;
     border: 0;
-    background-color:rgba(171, 171, 171, 0.7);
+    background-color: rgba(171, 171, 171, 0.7);
     width: 3rem;
-    height: 3rem;    
+    height: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0.5rem;
     color: rgb(236, 236, 236);
-    transition:  background-color 1s;
-    
+    transition: background-color 1s;
 
-    &:hover{
+    &:hover {
         background-color: darken(rgba(0, 209, 178, 0.7), 15%);
-        color:$font-colour;
+        color: $font-colour;
     }
 }
-
-
 
 .main-button {
-  display: flex;
-  padding: .75rem 1.25rem;
-  border-radius: 10rem;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1rem;
-  letter-spacing: .15rem;
-  transition: all .3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  &:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $primary;
+    display: flex;
+    padding: 0.75rem 1.25rem;
     border-radius: 10rem;
-    z-index: -2;
-  }
-  &:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    background-color: darken($primary, 15%);
-    transition: all .3s;
-    border-radius: 10rem;
-    z-index: -1;
-  }
-  &:hover {
     color: #fff;
-    &:before {
-      width: 100%;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 0.5rem;
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $primary;
+        border-radius: 10rem;
+        z-index: -2;
     }
-  }
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: darken($primary, 15%);
+        transition: all 0.3s;
+        border-radius: 10rem;
+        z-index: -1;
+    }
+    &:hover {
+        color: #fff;
+        &:before {
+            width: 100%;
+        }
+    }
 }
-
-
 
 // ------------------- Images
 .logo {
@@ -259,7 +298,7 @@ hr {
     height: 3rem;
 }
 
-#explore{
+#explore {
     background: url("./../images/logos/explore_icon.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -278,11 +317,11 @@ hr {
 
 .map-diagram {
     background: url("./../images/material/map.png");
-    // background-position: center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     // height: 40vw;
-    // width: 100vw;
+    width: 50vw;
     // display: flex;
     // flex-direction: column;
     // align-items: flex-end;
@@ -307,7 +346,7 @@ hr {
     margin-right: 1.5rem;
 }
 
-.cluster-icon-ecology{
+.cluster-icon-ecology {
     background: url("./../images/logos/210409_MaCT5_icons-03.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -317,7 +356,7 @@ hr {
     margin-right: 1.5rem;
 }
 
-.cluster-icon-energy{
+.cluster-icon-energy {
     background: url("./../images/logos/210409_MaCT5_icons-04.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -327,7 +366,7 @@ hr {
     margin-right: 1.5rem;
 }
 
-.cluster-icon-economy{
+.cluster-icon-economy {
     background: url("./../images/logos/210409_MaCT5_icons-06.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -337,7 +376,7 @@ hr {
     margin-right: 1.5rem;
 }
 
-.cluster-icon-mobility{
+.cluster-icon-mobility {
     background: url("./../images/logos/210409_MaCT5_icons-05.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -348,7 +387,7 @@ hr {
 }
 
 @media only screen and (max-width: 600px) {
-    .clusters{
+    .clusters {
         padding: 0;
         justify-content: flex-start;
     }
@@ -358,20 +397,24 @@ hr {
     }
 
     .offset-title-right,
-    .offset-title-left {        
-        width: auto; 
-    }
-        
-    .contained-text{
+    .offset-title-left {
         width: auto;
     }
 
-    .approach-diagram{
+    .contained-text {
+        width: auto;
+    }
+
+    .approach-diagram {
         width: 100vw;
         height: 20vh;
     }
-    .methodology-diagram{
+    .methodology-diagram {
         width: 70vw;
         height: 40vh;
+    }
+    .map-diagram {
+        width: 100vw;
+        height: 50vh;
     }
 }
