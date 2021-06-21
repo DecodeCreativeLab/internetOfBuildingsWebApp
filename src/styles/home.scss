@@ -348,8 +348,30 @@ hr {
 }
 
 @media only screen and (max-width: 600px) {
-    p {
+    .clusters{
+        padding: 0;
+        justify-content: flex-start;
+    }
+
+    .p-inset {
+        margin: 2rem 2rem 1rem 2rem;
+    }
+
+    .offset-title-right,
+    .offset-title-left {        
+        width: auto; 
+    }
+        
+    .contained-text{
         width: auto;
-        margin: 1rem;
+    }
+
+    .approach-diagram{
+        width: 100vw;
+        height: 20vh;
+    }
+    .methodology-diagram{
+        width: 70vw;
+        height: 40vh;
     }
 }

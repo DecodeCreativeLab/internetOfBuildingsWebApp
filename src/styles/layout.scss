@@ -37,6 +37,7 @@
 
 .topnav {
     position: absolute;
+    right: 0;
     z-index: 5;    
     display: none;
 
@@ -187,7 +188,7 @@ select option:hover {
 
 @media only screen and (max-width: 600px) {
     .topnav {
-        display: block;
+        display: block;       
     }
 
     .ui-container {        
