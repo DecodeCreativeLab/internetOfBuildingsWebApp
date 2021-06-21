@@ -14,7 +14,7 @@
   "proposal": {
     "description": "This project proposes a set of 9 health pills (from A to I) that are designed to answer the resulting health of flows from the analysis. Accordingly, for every segment in the network, an intervention is suggested. For example, a segment with low physical health and high pedestrian flow will have intervention A. Each of these pills have a list of 6 or 7 interventions that are specifically selected to raise the health score by taking into account the predominant agent flow. In the future, designers can adapt these pills to match the context of the site and the specific street conditions.",
     "image": "",
-    "video": "https://www.youtube.com/watch?v=4VJSjsW7JIA"
+    "video": "https://www.youtube.com/embed/PMjDB_39A5Q"
   },
   "layers": [
     {

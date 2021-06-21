@@ -4,7 +4,7 @@
     "proposal": {
         "description": "Phoenix is about designing an inclusive platform where interventions promoting Urban Vibrancy will be communicated between project development teams and community members. Users from development teams will be able to explore ideas and propose new ones, while users from community will be able to give their feedback for the proposals, join debates for further discussion and follow whole processes of change.",
         "image": "image_id_in_shared_folder",
-        "video": "video_url"
+        "video": "https://www.youtube.com/embed/oP6QcWZvXfA"        
     },
     "methodology": {
         "description": "Urban Vibrancy is analysed, first for the built environment using several metrics and then for the ground level based on site visits and observations. To have an integrative idea towards total vibrancy levels, all the layers are combined into a single map where all necessary interventions become more visible to be gathered under the catalogue of proposals. Lastly, with an interface, ideas from the development team and the community members come together for decision making.",

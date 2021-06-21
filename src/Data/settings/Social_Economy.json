@@ -4,7 +4,7 @@
   "proposal":{
     "description":"Sociable Spaces, focuses on the question of how we can make public spaces more sociable. The proposal investigates different layers of data that may affect social interaction and coherence and attempts to propose a strategy of intervention to improve sociability in selected areas.",
     "image": "image_name_in_shared_folder",
-    "video":"video_url"
+    "video":"https://www.youtube.com/embed/ZY5NPtxwL6A"
   },
   "methodology": {
     "description":"Through extensive research, we identified 12 indicators of social coherence and interaction. These layers are first analyzed and then categorized into 6 categories of sociability (Affordability, mixity, diversity, safety, attractiveness and connectivity). This helps to understand the performance of the area on every category. A clustering algorithm is then deployed to create delimited areas which have a similar behavior on each of the 6 categories. In parallel, footfall data of the same location is analyzed to identify “hot spots” of sociability. These are identified based on areas with highest footfall facilitating social interaction visualized into a sociability map. Next, the sociability map is intersected with the clusters to understand which clusters have the highest footfall in order to then understand the performance of these clusters in relation to the 6 categories of sociability. This procedure helps us identify which categories influence sociability the most and consequently propose strategies to improve these in order to increase sociability of desired locations.",

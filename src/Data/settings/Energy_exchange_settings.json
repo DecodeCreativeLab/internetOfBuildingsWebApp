@@ -4,7 +4,7 @@
   "proposal": {
     "description": "We propose an active and a passive way to move towards a new energy model. The active strategy is based on the installation of photovoltaic panels that can rise the self-production of energy at the building level, while the passive strategy is based on the renovation of the existing buildings to increase their energy efficiency. The implementation of both strategies will allow the generation of a decentralised system where the exchange of energy will be possible between buildings.",
     "image": "image_id_in_shared_folder",
-    "video": "video_url"
+    "video": "https://www.youtube.com/embed/gLw6J3R7zGc"
   },
   "methodology": {
     "description": "We start analyzing the existing energy consumption pattern based on the land use distribution and energy certification and potential solar energy production on the rooftops of every building in our district. This allow us to identify which strategies to apply to each of them in order to improve their energy balance and their potential to share energy with other users around through a future smart micro-grid system.",
