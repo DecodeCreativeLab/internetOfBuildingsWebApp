@@ -295,7 +295,7 @@ function generateOverlays(cluster) {
     //set text
     overlay.querySelector('#overlay-description').innerText = cluster[overlay.id].description;
     if (overlay.id == "proposal") {
-      overlay.querySelector('#overlay-video').src = cluster[overlay.id].video;
+      overlay.querySelector('#overlay-video').src = cluster[overlay.id].video +"?rel=0";
     }
     else {
       //set image
