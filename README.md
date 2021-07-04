@@ -14,7 +14,7 @@ Requirements for the software and other tools to build, test and push
 - [Git](https://git-scm.com/)
 - IDE [VScode](https://code.visualstudio.com/Download)
 
-### Installing
+### Installation
 
 A step by step series of examples that tell you how to get a development
 environment running
