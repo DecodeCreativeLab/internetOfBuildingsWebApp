@@ -3,6 +3,7 @@ const common = require("./webpack.common.js")
 const { merge } = require("webpack-merge");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = merge(common, {
     mode: "development",
@@ -29,6 +30,21 @@ module.exports = merge(common, {
             safe: true,
             allowEmptyValues: true,
         }),
+        new CopyPlugin({
+            patterns: [{
+                from: "./src/videos/*.mp4",
+                to({ context, absoluteFilename }) {
+                  return Promise.resolve("./dist/videos/[name][ext]");
+                },
+              },
+              {
+                from: "./src/images/favicon/*.ico",
+                to({ context, absoluteFilename }) {
+                  return Promise.resolve("./dist/images/favicon/[name][ext]");
+                },
+              },
+            ]
+        }),
         // new WebpackCDNInject({
         //     head: ["https://apis.google.com/js/api.js"]
         //   })
@@ -42,6 +58,18 @@ module.exports = merge(common, {
                     'sass-loader' //1. Turns sass into css
                 ],
             },
+            // {
+            //     test: /\.mp4$/,
+            //     use: [
+            //         {
+            //             loader: 'url-loader',
+            //             options: {
+            //                 limit: 10000,
+            //                 mimetype: 'video/ mp4'
+            //             }
+            //         }
+            //     ]
+            // },
             {
                 test: /\.node$/,
                 loader: "node-loader",

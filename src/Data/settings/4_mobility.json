@@ -1,0 +1,482 @@
+{
+  "group": "Mobility",
+  "icon": "image_id_in_shared_folder",
+  "challenge": {
+    "description": "The main challenge this project addresses is creating a city with a healthier mobility network. In the last years, health concerns have been an increasing focus of municipalities. Yet, street design has not been used as a driver of change towards a healthier city. By analyzing mobility flows and different health aspects, the project allows planners to identify risk areas in the network and design specific interventions that can address each of these risks.",
+    "image": "mobility_global_challenge.png",
+    "video": "video_url"
+  },
+  "methodology": {
+    "description": "To address the identified challenges, this project methodology starts by studying two aspects of a healthy network: agent flows and network health. First, the existing road network is segmented and these segments are then scored based on 3 agent preferences (pedestrian, bike and car) and 3 health indicators (physical, mental, and social). The resulting scores provide us with the Agent flows and the Health scores respectively.The results from the two scores are combined and evaluated to identify risk areas (areas with lowest health and highest flow). An intervention is then suggested from a catalogue of predesigned health pills.",
+    "image": "mobility_global_methodology.png",
+    "video": "video_url"
+  },
+  "proposal": {
+    "description": "This project proposes a set of 9 health pills (from A to I) that are designed to answer the resulting health of flows from the analysis. Accordingly, for every segment in the network, an intervention is suggested. For example, a segment with low physical health and high pedestrian flow will have intervention A. Each of these pills have a list of 6 or 7 interventions that are specifically selected to raise the health score by taking into account the predominant agent flow. In the future, designers can adapt these pills to match the context of the site and the specific street conditions.",
+    "image": "",
+    "video": "https://www.youtube.com/embed/PMjDB_39A5Q"
+  },
+  "layers": [
+    {
+      "name": "Agents preferences",
+      "sublayers": [
+        {
+          "name": "Pedestrian",
+          "mapID": "internetofbuildings2021.78ikumgn",
+          "mapboxSrc": ["mobility_pedestrian-5rdgh8"],
+          "type": "lineString",
+          "representation": "2D",
+          "source": "https://merritt.cdlib.org/d/ark%3A%2F13030%2Fm5gf27pt/1/producer%2F892138562.pdf",
+          "scale": "large",
+          "units": "Pedestrian Environmental Quality Index",
+          "description": "The Pedestrian Environmental Quality Index (PEQI) is a spatial index consisting of 21 layers such as crosswalks, intersections, width of sidewalks, sidewalk obstructions amongst others. These layers are clustered in 5 categories: Intersection Safety, Traffic, Street Design, Land Use, and Perceived Safety and multiplied by specific weights, to reach the final result. The purpose of this study is to indicate which streets are more “walkable” or in other words, preferred by pedestrian users. The index was created by the San Francisco Department of Public Health (SFDPH) and was adopted for the case of Poblenou.",
+          "interpolation": true,
+          "paint": {
+            "property": "PEQI",
+            "stops": [
+              [5.00, "#aa1315"],
+              [6.00, "#fba55d"],
+              [6.27, "#d1d194"],
+              [6.52, "#8ec9a9"],
+              [6.75, "#5ca6b2"],
+              [7.58, "#2b83ba"]
+            ]
+          },
+          "legend": [
+            {"color": "#aa1315", "stop": "0"},
+            {"color": "#e6c98b", "stop": "5"},
+            {"color": "#2b83ba", "stop": "10"}
+          ],
+          "interactable": {
+            "status": true,
+            "text": "Scatterplot consumers-producers"
+          },
+          "icon": "mobility_pref_PEQI.svg"
+        },
+        {
+          "name": "Bicycle",
+          "mapID": "internetofbuildings2021.9kqt3gul",
+          "mapboxSrc": ["mobility_bike-1n3w6j"],
+          "type": "lineString",
+          "representation": "2D",
+          "source": "https://merritt.cdlib.org/d/ark%253A%252F13030%252Fm5qz3r51/1/producer%252F892131162.pdf",
+          "scale": "large",
+          "units": "Bicycle Environmental Quality Index",
+          "description": "The Bicycle Environmental Quality Index (BEQI) is a spatial index, consisting of 13 layers such as intersections, bicycle lane markers,presence of trees, street slope amongst others. These layers are clustered in 5 categories: intersection design, street design, vehicle traffic, safety, and adjacent land use and multiplied by specific weights, to reach the final result. The purpose of this study is to reveal the relative quality of the biking environment or in other words, which streets are mostly  preferred by cyclists.The index was created by the San Francisco Department of Public Health (SFDPH) and was adopted for the case of Poblenou.",
+          "interpolation": true,
+          "paint": {
+            "property": "BEQI",
+            "stops": [
+              [5.70, "#aa1315"],
+              [6.30, "#fdaf61"],
+              [6.90, "#ecc382"],
+              [7.50, "#cdd296"],
+              [7.90, "#a6daa5"],
+              [8.20, "#2b83ba"]
+            ]
+          },
+          "legend": [
+            {"color": "#aa1315", "stop": "0"},
+            {"color": "#e6c98b", "stop": "5"},
+            {"color": "#2b83ba", "stop": "10"}
+          ],
+          "interactable": {
+            "status": true,
+            "text": "Scatterplot consumers-producers"
+          },
+          "icon": "mobility_pref_BEQI.svg"
+        },
+        {
+          "name": "Vehicle",
+          "mapID": "internetofbuildings2021.6vsv7g9d",
+          "mapboxSrc": ["mobility_vehicle-3waxs7"],
+          "type": "lineString",
+          "representation": "2D",
+          "source": "",
+          "scale": "large",
+          "units": "Vehicle Environmental Quality Index",
+          "description": "The Vehicle Environmental Quality Index (VEQI) is a spatial index, consisting of 5 main layers, type of road, number of lanes, two way traffic, speed limit and traffic volume.",
+          "interpolation": true,
+          "paint": {
+            "property": "VEQI",
+            "stops": [
+              [2.98, "#aa1315"],
+              [4.22, "#f3844d"],
+              [4.70, "#f5b871"],
+              [4.90, "#e6c98b"],
+              [5.30, "#9fd5a6"],
+              [9.10, "#2b83ba"]
+            ]
+          },
+          "legend": [
+            {"color": "#aa1315", "stop": "0"},
+            {"color": "#e6c98b", "stop": "5"},
+            {"color": "#2b83ba", "stop": "10"}
+          ],
+          "interactable": {
+            "status": true,
+            "text": "Scatterplot consumers-producers"
+          },
+          "icon": "mobility_pref_VEQI.svg"
+        }
+      ]
+    },
+    {
+      "name": "Health",
+      "sublayers": [
+        {
+          "name": "Physical",
+          "mapID": "internetofbuildings2021.0y3whf31",
+          "mapboxSrc": ["mobility_healths-dv0kbm"],
+          "type": "lineString",
+          "representation": "2D",
+          "source": "https://ajuntament.barcelona.cat/mapes-dades-ambientals/soroll/en/",
+          "scale": "large",
+          "units": "Physical health index",
+          "description": "The Physical Health of the road network represents a combination of the indicators that influence the physical health of the users. More specifically, the layers that were considered are Air quality (considering NO2, PM10 and PM2.5 pollution), Thermal Comfort and Number of accidents. The final map depicts the road segments with the lowest physical health.",
+          "interpolation": true,
+          "paint": {
+            "property": "H1.Physica",
+            "stops": [
+              [2.98, "#e0d536"],
+              [3.40, "#867534"],
+              [4.00, "#4e3d2b"],
+              [4.76, "#34291c"],
+              [5.18, "#1a140e"],
+              [6.35, "#000000"]
+            ],
+            "lineWidth": {
+              "property": "H1.Physica",
+              "stops": [
+                [3.00, 5],
+                [4.00, 4],
+                [5.00, 3],
+                [6.0, 1]
+              ]
+            }
+          },
+          "legend": [
+            {"color": "#e0d536", "stop": "0"},
+            {"color": "#000000", "stop": "10"}
+          ],
+          "interactable": {
+            "status": true,
+            "text": "Scatterplot consumers-producers"
+          },
+          "icon": "mobility_health_physical.svg"
+        },
+        {
+          "name": "Mental",
+          "mapID": "internetofbuildings2021.0y3whf31",
+          "mapboxSrc": ["mobility_healths-dv0kbm"],
+          "type": "lineString",
+          "representation": "2D",
+          "source": "https://opendata-ajuntament.barcelona.cat/data/en/dataset",
+          "scale": "large",
+          "units": "Mental health index",
+          "description": "The Mental Health of the road network represents a combination of the indicators that influence the mental health of the users. More specifically, the layers that were considered are Noise pollution, Visibility and NDVI (Normalized difference vegetation index). The final map depicts the road segments with the lowest mental health.",
+          "interpolation": true,
+          "paint": {
+            "property": "H2.Mental",
+            "stops": [
+              [4.35, "#2effce"],
+              [4.92, "#195464"],
+              [5.38, "#0d2d36"],
+              [10.0, "#061600"]
+            ],
+            "lineWidth": {
+              "property": "H2.Mental",
+              "stops": [
+                [1.00, 5],
+                [3.00, 4],
+                [5.00, 3],
+                [7.00, 3],
+                [9.00, 2],
+                [10.0, 1]
+              ]
+            }
+          },
+          "legend": [
+            {"color": "#2effce", "stop": "0"},
+            {"color": "#061600", "stop": "10"}
+          ],
+          "interactable": {
+            "status": true,
+            "text": "Scatterplot consumers-producers"
+          },
+          "icon": "mobility_health_mental.svg"
+        },
+        {
+          "name": "Social",
+          "mapID": "internetofbuildings2021.0y3whf31",
+          "mapboxSrc": ["mobility_healths-dv0kbm"],
+          "type": "lineString",
+          "representation": "2D",
+          "source": "https://opendata-ajuntament.barcelona.cat/data/en/dataset",
+          "scale": "large",
+          "units": "Social health index",
+          "description": "The Social Health of the road network represents a combination of the indicators that influence the mental health of the users. More specifically, the layers that were considered are Accessibility, Proximity to Amenities, Proximity to Public Transport, Proximity to bike and car parking. The final map depicts the road segments with the lowest social health.",
+          "interpolation": true,
+          "paint": {
+            "property": "H3.Social",
+            "stops": [
+              [5.23, "#d12dff"],
+              [6.12, "#b12df5"],
+              [6.76, "#542fa7"],
+              [7.57, "#432d64"],
+              [10.0, "#000000"]
+            ],
+            "lineWidth": {
+              "property": "H3.Social",
+              "stops": [
+                [1.00, 5],
+                [3.00, 4],
+                [5.00, 4],
+                [7.00, 3],
+                [9.00, 2],
+                [10.0, 1]
+              ]
+            }
+          },
+          "legend": [
+            {"color": "#d12dff", "stop": "0"},
+            {"color": "#000000", "stop": "10"}
+          ],
+          "interactable": {
+            "status": true,
+            "text": "Scatterplot consumers-producers"
+          },
+          "icon": "mobility_health_social.svg"
+        }
+      ]
+    },
+    {
+      "name": "Flows",
+      "sublayers": [
+        {
+          "name": "Pedestrian",
+          "mapID": "internetofbuildings2021.78ikumgn",
+          "mapboxSrc": ["mobility_pedestrian-5rdgh8"],
+          "type": "lineString",
+          "representation": "2D",
+          "source": "",
+          "scale": "large",
+          "units": "no. pedestrian agents",
+          "description": "This map shows the simulated pedestrian flows in the area. Using footfall data, we derived the start and end point of each user. Then taking into account the PEQI (pedestrian agent preference) and the shortest distance the preferred route of each user was simulated using an agent based algorithm. All these flows were then aggregated to form a map for most preferred pedestrian routes for the agents.",
+          "interpolation": true,
+          "paint": {
+            "property": "npaths",
+            "stops": [
+              [1, "#56d1f2"]
+            ],
+            "lineWidth": {
+              "property": "npaths",
+              "stops": [
+                [10, 1],
+                [100, 12]
+              ]
+            }
+          },
+          "legend": [
+            {"color": "#2e2e2e", "stop": "0"},
+            {"color": "#56d1f2", "stop": "200"}
+          ],
+          "interactable": {
+            "status": true,
+            "text": "Scatterplot consumers-producers"
+          },
+          "icon": "mobility_flow_pedestrian.svg"
+        },
+        {
+          "name": "Bicycle",
+          "mapID": "internetofbuildings2021.9kqt3gul",
+          "mapboxSrc": ["mobility_bike-1n3w6j"],
+          "type": "lineString",
+          "representation": "2D",
+          "source": "",
+          "scale": "large",
+          "units": "no. bike agents",
+          "description": "This map shows the simulated bike flows in the area. Using footfall data, we derived the start and end point of each user. Then taking into account the BEQI (bike agent preference) and the shortest distance the preferred route of each user was simulated using an agent based algorithm. All these flows were then aggregated to form a map for most preferred bike routes for the agents.",
+          "interpolation": true,
+          "paint": {
+            "property": "npaths",
+            "stops": [
+              [1, "#f99b06"]
+            ],
+            "lineWidth": {
+              "property": "npaths",
+              "stops": [
+                [10, 1],
+                [80, 12]
+              ]
+            }
+          },
+          "legend": [
+            {"color": "#2e2e2e", "stop": "0"},
+            {"color": "#f99b06", "stop": "200"}
+          ],
+          "interactable": {
+            "status": true,
+            "text": "Scatterplot consumers-producers"
+          },
+          "icon": "mobility_flow_bike.svg"
+        },
+        {
+          "name": "Vehicle",
+          "mapID": "internetofbuildings2021.6vsv7g9d",
+          "mapboxSrc": ["mobility_vehicle-3waxs7"],
+          "type": "lineString",
+          "representation": "2D",
+          "source": "",
+          "scale": "large",
+          "units": "no. vehicle agents",
+          "description": "This map shows the simulated car flows in the area. Using footfall data, we derived the start and end point of each user. Then taking into account the VEQI (vehicle agent preference) and the shortest distance the preferred route of each user was simulated using an agent based algorithm. All these flows were then aggregated to form a map for most preferred vehicle routes for the agents.",
+          "interpolation": true,
+          "paint": {
+            "property": "npaths",
+            "stops": [
+              [1, "#f06367"]
+            ],
+            "lineWidth": {
+              "property": "npaths",
+              "stops": [
+                [10, 1],
+                [50, 8],
+                [180, 12]
+              ]
+            }
+          },
+          "legend": [
+            {"color": "#2e2e2e", "stop": "0"},
+            {"color": "#f06367", "stop": "170"}
+          ],
+          "interactable": {
+            "status": true,
+            "text": "Scatterplot consumers-producers"
+          },
+          "icon": "mobility_flow_vehicle.svg"
+        }
+      ]
+    },
+    {
+      "name": "Combined",
+      "sublayers": [
+        {
+          "name": "Flows",
+          "mapID": "internetofbuildings2021.6jfmuoxy",
+          "mapboxSrc": ["mobility_combined_health_flow-6wa16t"],
+          "type": "lineString",
+          "representation": "2D",
+          "source": "",
+          "scale": "large",
+          "units": "Dominant flow",
+          "description": "Combined flows are the aggregated values of the flows of pedestrians, bikes and vehicles in the network. In other words, only the dominant mode of transport at each segment of the road network is depicted. The colors here represent the 3 different transport modes while the width represents the number of paths.",
+          "interpolation": false,
+          "paint": {
+            "property": "agent_type",
+            "stops": [
+              ["P", "#2bbce3"],
+              ["B", "#f99b06"],
+              ["C", "#f06367"]
+            ],
+            "lineWidth": {
+              "property": "flow",
+              "stops": [
+                [0, 1],
+                [1, 10]
+              ]
+            }
+          },
+          "legend": [
+            {"color": "#2bbce3", "stop": "Pedestrian"},
+            {"color": "#f99b06", "stop": "Bike"},
+            {"color": "#f06367", "stop": "Vehicle"}
+          ],
+          "interactable": {
+            "status": true,
+            "text": "Scatterplot consumers-producers"
+          },
+          "icon": "mobility_combined_flow.svg"
+        },
+        {
+          "name": "Health",
+          "mapID": "internetofbuildings2021.6jfmuoxy",
+          "mapboxSrc": ["mobility_combined_health_flow-6wa16t"],
+          "type": "lineString",
+          "representation": "2D",
+          "source": "",
+          "scale": "large",
+          "units": "Dominant health risk",
+          "description": "Combined healths are the aggregated values of the Physical, Mental and Social healths of the network. In other words, only the lowest health at each segment of the road network is depicted. The colors represent the 3 different health categories while the width represents their value.",
+          "interpolation": false,
+          "paint": {
+            "property": "risk_type",
+            "stops": [
+              ["M", "#2effce"],
+              ["P", "#e0d536"],
+              ["S", "#bf2dff"],
+              ["-", "#cccccc"]
+            ],
+            "lineWidth": {
+              "property": "risk_score",
+              "stops": [
+                [6, 1],
+                [16, 10]
+              ]
+            }
+          },
+          "legend": [
+            {"color": "#2effce", "stop": "Mental risk"},
+            {"color": "#e0d536", "stop": "Physical risk"},
+            {"color": "#bf2dff", "stop": "Social risk"},
+            {"color": "#cccccc", "stop": "Low risk"}
+          ],
+          "interactable": {
+            "status": true,
+            "text": "Scatterplot consumers-producers"
+          },
+          "icon": "mobility_combined_health.svg"
+        },
+        {
+          "name": "Flows health",
+          "mapID": "internetofbuildings2021.6jfmuoxy",
+          "mapboxSrc": ["mobility_combined_health_flow-6wa16t"],
+          "type": "lineString",
+          "representation": "2D",
+          "source": "",
+          "scale": "large",
+          "units": "Dominant health risk & flow",
+          "description": "Flows health are the aggregated values of  the healths, physical, mental and social, combined with the flows, both evaluated for each segment of the network. In other words, only the lowest health of each segment is depicted with the relevant color, while the width of the lines represent the number of paths.",
+          "interpolation": false,
+          "paint": {
+            "property": "risk_type",
+            "stops": [
+              ["M", "#2effce"],
+              ["P", "#e0d536"],
+              ["S", "#bf2dff"],
+              ["-", "#cccccc"]
+            ],
+            "lineWidth": {
+              "property": "flow",
+              "stops": [
+                [0, 1],
+                [1, 10]
+              ]
+            }
+          },
+          "legend": [
+            {"color": "#2effce", "stop": "Mental risk"},
+            {"color": "#e0d536", "stop": "Physical risk"},
+            {"color": "#bf2dff", "stop": "Social risk"},
+            {"color": "#cccccc", "stop": "Low risk"}
+          ],
+          "interactable": {
+            "status": true,
+            "text": "Scatterplot consumers-producers"
+          },
+          "icon": "mobility_combined_health_flow.svg"
+        }
+      ]
+    }
+  ]
+}

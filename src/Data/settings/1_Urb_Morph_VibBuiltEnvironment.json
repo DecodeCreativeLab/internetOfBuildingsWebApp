@@ -1,0 +1,1080 @@
+{
+    "group": "Urban Morphology",
+    "icon": "Urban_Morphology_morphology-01.png",
+    "proposal": {
+        "description": "Phoenix is about designing an inclusive platform where interventions promoting Urban Vibrancy will be communicated between project development teams and community members. Users from development teams will be able to explore ideas and propose new ones, while users from community will be able to give their feedback for the proposals, join debates for further discussion and follow whole processes of change.",
+        "image": "image_id_in_shared_folder",
+        "video": "https://www.youtube.com/embed/oP6QcWZvXfA"        
+    },
+    "methodology": {
+        "description": "Urban Vibrancy is analysed, first for the built environment using several metrics and then for the ground level based on site visits and observations. To have an integrative idea towards total vibrancy levels, all the layers are combined into a single map where all necessary interventions become more visible to be gathered under the catalogue of proposals. Lastly, with an interface, ideas from the development team and the community members come together for decision making.",
+        "image": "Urban_Morphology_Methodology.png",
+        "video": "video_url"
+    },
+    "challenge": {
+        "description": "Using morphological metrics, main challenge of the project is to promote urban vibrancy, which the study associated with activity intensity, the diversity of land-use configurations, and the accessibility of a place.  It mainly refers to updated plan decisions for 22@ District by providing all the layers of analysis, development and proposal for the radical change that awaits the area in the near future.",
+        "image": "Urban_Morphology_Challenges.png",
+        "video": "video_url"
+    },
+    "layers": [
+        {
+            "name": "Vibrancy of Built Environment",
+            "sublayers": [
+                {
+                    "name": "Vibrancy Built Environment",
+                    "mapID": "internetofbuildings2021.dxjtntyu",
+                    "mapboxSrc": [
+                        "15_UrbanMorph_N_Vibrancy_Buil-da5256"
+                    ],
+                    "type": "polygon",
+                    "representation": "2D",    
+                    "source": "https://www.openstreetmap.org/#map=6/40.007/-2.488",
+                    "scale": "detailed",
+                    "units": "N/A",
+                    "description": "Total vibrancy of an area based on the area’s infrastructure e.g. buildings, roads, blocks etc. ",
+                    "interpolation": true, 
+                    "paint": {
+                        "property": "Normalized",
+                        "stops": [
+                            [
+                                6,
+                                "#f9f871"
+                            ],
+                            [
+                                18,
+                                "#ffb855"
+                            ],
+                            [
+                                27,
+                                "#ff7e5e"
+                            ],
+                            [
+                                48,
+                                "#9d3274"
+                            ],
+                            [
+                                100,
+                                "#452e86"
+                            ]
+                        ]
+                    },
+                    "legend": [
+                        {
+                            "color": "#f9f871",
+                            "stop": "0"
+                        },
+                        {
+                            "color": "#ffb855",
+                            "stop": "33"
+                        },
+                        {
+                            "color": "#ff7e5e",
+                            "stop": "50"
+                        },
+                        {
+                            "color": "#df4d72",
+                            "stop": "67"
+                        },
+                        {
+                            "color": "#9d3274",
+                            "stop": "83"
+                        },
+                        {
+                            "color": "#452e86",
+                            "stop": "100"
+                        }
+                    ],
+                    "interactable": {
+                        "status": true, 
+                        "text": "Vibrancy Built Environment: "
+                    },
+                    "image": "Urban_Morphology_Vibrancy_of_built_environment.png" 
+                },
+                {
+                    "name": "Mixture of points of interest",
+                    "mapID": "internetofbuildings2021.5ftfievn",
+                    "mapboxSrc": [
+                        "01_UrbanMorph_N_Mixture_of_po-cpa14y"
+                    ],
+                    "type": "polygon",
+                    "representation": "2D",    
+                    "source": "https://www.openstreetmap.org/#map=6/40.007/-2.488",
+                    "scale": "detailed",
+                    "units": "N/A",
+                    "description": "The degree of mixture of Points of Interest from 5 categories: Educational, Commerce, Outdoor & Recreation, Residential and Transport. The higher the degree, the higher the number of different POI’s in the area. ",
+                    "interpolation": true, 
+                    "paint": {
+                        "property": "Normalized",
+                        "stops": [
+                            [
+                                20,
+                                "#f9f871"
+                            ],
+                            [
+                                40,
+                                "#ffb855"
+                            ],
+                            [
+                                60,
+                                "#df4d72"
+                            ],
+                            [
+                                80,
+                                "#9d3274"
+                            ],
+                            [
+                                100,
+                                "#452e86"
+                            ]
+                        ]
+                    },
+                    "legend": [
+                        {
+                            "color": "#f9f871",
+                            "stop": "0"
+                        },
+                        {
+                            "color": "#ffb855",
+                            "stop": "33"
+                        },
+                        {
+                            "color": "#ff7e5e",
+                            "stop": "50"
+                        },
+                        {
+                            "color": "#df4d72",
+                            "stop": "67"
+                        },
+                        {
+                            "color": "#9d3274",
+                            "stop": "83"
+                        },
+                        {
+                            "color": "#452e86",
+                            "stop": "100"
+                        }
+                    ],
+                    "interactable": {
+                        "status": true, 
+                        "text": "Mixture of points of interest: "
+                    },
+                    "image": "Urban_Morphology_Mixture_of_Points_of_Interest.png" 
+                },
+                {
+                    "name": "Mix of transport POI",
+                    "mapID": "internetofbuildings2021.1a47jsum",
+                    "mapboxSrc": [
+                        "02_UrbanMorph_N_Mix_Transp_PO-cw37mq"
+                    ],
+                    "type": "polygon",
+                    "representation": "2D", 
+                    "source": "https://www.openstreetmap.org/#map=6/40.007/-2.488",
+                    "scale": "detailed",
+                    "units": "N/A",
+                    "description": "The total number of Transport Points of Interest per neighborhood; the higher the number the higher the intensity of transport facilities in the area",
+                    "interpolation": true, 
+                    "paint": {
+                        "property": "Normalized", 
+                        "stops": [
+                            [
+                                20,
+                                "#f9f871"
+                            ],
+                            [
+                                40,
+                                "#ffb855"
+                            ],
+                            [
+                                80,
+                                "#9d3274"
+                            ],
+                            [
+                                100,
+                                "#452e86"
+                            ]
+                        ]
+                    },
+                    "legend": [
+                        {
+                            "color": "#f9f871",
+                            "stop": "0"
+                        },
+                        {
+                            "color": "#ffb855",
+                            "stop": "33"
+                        },
+                        {
+                            "color": "#df4d72",
+                            "stop": "67"
+                        },
+                        {
+                            "color": "#9d3274",
+                            "stop": "83"
+                        },
+                        {
+                            "color": "#452e86",
+                            "stop": "100"
+                        }
+                    ],
+                    "interactable": {
+                        "status": true, 
+                        "text": "Mixture of Transport POI : "
+                    },
+                    "image": "Urban_Morphology_Density_of_Transport_Points_of_Interest.png" 
+                },
+                {
+                    "name": "Mix of Residential POI",
+                    "mapID": "internetofbuildings2021.4sun8ghr",
+                    "mapboxSrc": [
+                        "03_UrbanMorph_N_Mix_Resident_-1somg6"
+                    ],
+                    "type": "polygon",
+                    "representation": "2D", 
+                    "source": "https://opendata-ajuntament.barcelona.cat/es/",
+                    "scale": "detailed",
+                    "units": "N/A",
+                    "description": "The total number of Residential Points of Interest per neighborhood; the higher the number the higher the intensity of residential units in the area ",
+                    "interpolation": true, 
+                    "paint": {
+                        "property": "Normalized", 
+                        "stops": [
+                            [
+                                6,
+                                "#f9f871"
+                            ],
+                            [
+                                18,
+                                "#ffb855"
+                            ],
+                            [
+                                31,
+                                "#ff7e5e"
+                            ],
+                            [
+                                52,
+                                "#9d3274"
+                            ],
+                            [
+                                100,
+                                "#452e86"
+                            ]
+                        ]
+                    },
+                    "legend": [
+                        {
+                            "color": "#f9f871",
+                            "stop": "0"
+                        },
+                        {
+                            "color": "#ffb855",
+                            "stop": "33"
+                        },
+                        {
+                            "color": "#df4d72",
+                            "stop": "67"
+                        },
+                        {
+                            "color": "#9d3274",
+                            "stop": "83"
+                        },
+                        {
+                            "color": "#452e86",
+                            "stop": "100"
+                        }
+                    ],
+                    "interactable": {
+                        "status": true, 
+                        "text": "Mixture of Residential POI : "
+                    },
+                    "image": "Urban_Morphology_Density_of_Residential_Points_of_Interest.png" 
+                },
+                {
+                    "name": "Mix of Outdoor POI",
+                    "mapID": "internetofbuildings2021.39ag7h4d",
+                    "mapboxSrc": [
+                        "04_UrbanMorph_N_Mix_Outdoor_P-11goak"
+                    ],
+                    "type": "polygon",
+                    "representation": "2D", 
+                    "source": "https://www.openstreetmap.org/#map=6/40.007/-2.488",
+                    "scale": "detailed",
+                    "units": "N/A",
+                    "description": "The total number of Outdoor & Recreation Points of Interest per neighborhood; the higher the number the higher the intensity of Outdoor and Recreation Facilities in the area",
+                    "interpolation": true, 
+                    "paint": {
+                        "property": "Normalized", 
+                        "stops": [
+                            [
+                                20,
+                                "#f9f871"
+                            ],
+                            [
+                                60,
+                                "#df4d72"
+                            ],
+                            [
+                                100,
+                                "#452e86"
+                            ]
+                        ]
+                    },
+                    "legend": [
+                        {
+                            "color": "#f9f871",
+                            "stop": "0"
+                        },
+                        {
+                            "color": "#df4d72",
+                            "stop": "50"
+                        },
+                        {
+                            "color": "#452e86",
+                            "stop": "100"
+                        }
+                    ],
+                    "interactable": {
+                        "status": true, 
+                        "text": "Mixture of Outdoor POI : "
+                    },
+                    "image": "Urban_Morphology_Density_of_Recreational_Points_of_Interest.png" 
+                },
+                {
+                    "name": "Mix of Education POI",
+                    "mapID": "internetofbuildings2021.0xantwoi",
+                    "mapboxSrc": [
+                        "05_UrbanMorph_N_Mix_Education-9y573p"
+                    ],
+                    "type": "polygon",
+                    "representation": "2D", 
+                    "source": "https://www.openstreetmap.org/#map=6/40.007/-2.488",
+                    "scale": "detailed",
+                    "units": "N/A",
+                    "description": "The total number of Educational Points of Interest per neighborhood; the higher the number the higher the intensity of Educational Facilities in the area",
+                    "interpolation": true, 
+                    "paint": {
+                        "property": "Normalized", 
+                        "stops": [
+                            [
+                                20,
+                                "#f9f871"
+                            ],
+                            [
+                                40,
+                                "#ffb855"
+                            ],
+                            [
+                                80,
+                                "#df4d72"
+                            ],
+                            [
+                                100,
+                                "#452e86"
+                            ]
+                        ]
+                    },
+                    "legend": [
+                        {
+                            "color": "#f9f871",
+                            "stop": "0"
+                        },
+                        {
+                            "color": "#ffb855",
+                            "stop": "33"
+                        },
+                        {
+                            "color": "#df4d72",
+                            "stop": "67"
+                        },
+                        {
+                            "color": "#452e86",
+                            "stop": "100"
+                        }
+                    ],
+                    "interactable": {
+                        "status": true, 
+                        "text": "Mixture of Education POI : "
+                    },
+                    "image": "Urban_Morphology_Density_of_Educational_Points_of_Interest.png"
+                },
+                {
+                    "name": "Mix of Commerce POI",
+                    "mapID": "internetofbuildings2021.40sogcb6",
+                    "mapboxSrc": [
+                        "06_UrbanMorph_N_Mix_Commerce_-4momfa"
+                    ],
+                    "type": "polygon",
+                    "representation": "2D", 
+                    "source": "https://www.inatlas.com/",
+                    "scale": "detailed",
+                    "units": "N/A",
+                    "description": "The total number of Commercial Points of Interest per neighborhood; the higher the number the higher the intensity of Commercial activities in the area",
+                    "interpolation": true, 
+                    "paint": {
+                        "property": "Normalized", 
+                        "stops": [
+                            [
+                                7,
+                                "#f9f871"
+                            ],
+                            [
+                                20,
+                                "#ffb855"
+                            ],
+                            [
+                                35,
+                                "#df4d72"
+                            ],
+                            [
+                                57,
+                                "#9d3274"
+                            ],
+                            [
+                                100,
+                                "#452e86"
+                            ]
+                        ]
+                    },
+                    "legend": [
+                        {
+                            "color": "#f9f871",
+                            "stop": "0"
+                        },
+                        {
+                            "color": "#ffb855",
+                            "stop": "33"
+                        },
+                        {
+                            "color": "#df4d72",
+                            "stop": "67"
+                        },
+                        {
+                            "color": "#9d3274",
+                            "stop": "83"
+                        },
+                        {
+                            "color": "#452e86",
+                            "stop": "100"
+                        }
+                    ],
+                    "interactable": {
+                        "status": true, 
+                        "text": "Mixture of Commerce POI : "
+                    },
+                    "image": "Urban_Morphology_Density_of_Commertial_Points_of_Interest.png" 
+                },
+                {
+                    "name": "Density of Choice",
+                    "mapID": "internetofbuildings2021.9qsnocmy",
+                    "mapboxSrc": [
+                        "07_UrbanMorph_N_Dens_Choice-ct6it3"
+                    ],
+                    "type": "polygon",
+                    "representation": "2D", 
+                    "source": "https://www.openstreetmap.org/#map=6/40.007/-2.488",
+                    "scale": "detailed",
+                    "units": "N/A",
+                    "description": "Choice measures the possibility of a street segment to be passed through on all shortest routes from all spaces to all other spaces in the entire area. ",
+                    "interpolation": true, 
+                    "paint": {
+                        "property": "Normalized", 
+                        "stops": [
+                            [
+                                20,
+                                "#f9f871"
+                            ],
+                            [
+                                40,
+                                "#ffb855"
+                            ],
+                            [
+                                60,
+                                "#df4d72"
+                            ],
+                            [
+                                80,
+                                "#9d3274"
+                            ],
+                            [
+                                100,
+                                "#452e86"
+                            ]
+                        ]
+                    },
+                    "legend": [
+                        {
+                            "color": "#f9f871",
+                            "stop": "0"
+                        },
+                        {
+                            "color": "#ffb855",
+                            "stop": "33"
+                        },
+                        {
+                            "color": "#df4d72",
+                            "stop": "67"
+                        },
+                        {
+                            "color": "#9d3274",
+                            "stop": "83"
+                        },
+                        {
+                            "color": "#452e86",
+                            "stop": "100"
+                        }
+                    ],
+                    "interactable": {
+                        "status": true, 
+                        "text": "Density of Choice : "
+                    },
+                    "image": "Urban_Morphology_Density_of_Choice.png" 
+                },
+                {
+                    "name": "Angular Integration",
+                    "mapID": "internetofbuildings2021.2fzbp3jd",
+                    "mapboxSrc": [
+                        "08_UrbanMorph_N_Angular_Integ-1hkjz8"
+                    ],
+                    "type": "polygon",
+                    "representation": "2D", 
+                    "source": "https://www.openstreetmap.org/#map=6/40.007/-2.488",
+                    "scale": "detailed",
+                    "units": "N/A",
+                    "description": "Angular Integration measures how close each segment is to all others depending on the angular changes of each route.  ",
+                    "interpolation": true, 
+                    "paint": {
+                        "property": "Normalized", 
+                        "stops": [
+                            [
+                                18,
+                                "#f9f871"
+                            ],
+                            [
+                                39,
+                                "#ffb855"
+                            ],
+                            [
+                                59,
+                                "#df4d72"
+                            ],
+                            [
+                                80,
+                                "#9d3274"
+                            ],
+                            [
+                                100,
+                                "#452e86"
+                            ]
+                        ]
+                    },
+                    "legend": [
+                        {
+                            "color": "#f9f871",
+                            "stop": "0"
+                        },
+                        {
+                            "color": "#ffb855",
+                            "stop": "33"
+                        },
+                        {
+                            "color": "#df4d72",
+                            "stop": "67"
+                        },
+                        {
+                            "color": "#9d3274",
+                            "stop": "83"
+                        },
+                        {
+                            "color": "#452e86",
+                            "stop": "100"
+                        }
+                    ],
+                    "interactable": {
+                        "status": true, 
+                        "text": "Angular Integration : "
+                    },
+                    "image": "Urban_Morphology_angular_integration.png"
+                },
+                {
+                    "name": "Density Road Length",
+                    "mapID": "internetofbuildings2021.1fuu9s3j",
+                    "mapboxSrc": [
+                        "09_UrbanMorph_N_Density_Road_-0cwl59"
+                    ],
+                    "type": "polygon",
+                    "representation": "2D", 
+                    "source": "https://www.openstreetmap.org/#map=6/40.007/-2.488",
+                    "scale": "detailed",
+                    "units": "N/A",
+                    "description": "Total length of roads per neighborhood; the less the number, the less the roads in the area. ",
+                    "interpolation": true, 
+                    "paint": {
+                        "property": "Normalized", 
+                        "stops": [
+                            [
+                                20,
+                                "#f9f871"
+                            ],
+                            [
+                                40,
+                                "#ffb855"
+                            ],
+                            [
+                                60,
+                                "#df4d72"
+                            ],
+                            [
+                                80,
+                                "#9d3274"
+                            ],
+                            [
+                                100,
+                                "#452e86"
+                            ]
+                        ]
+                    },
+                    "legend": [
+                        {
+                            "color": "#f9f871",
+                            "stop": "0"
+                        },
+                        {
+                            "color": "#ffb855",
+                            "stop": "33"
+                        },
+                        {
+                            "color": "#df4d72",
+                            "stop": "67"
+                        },
+                        {
+                            "color": "#9d3274",
+                            "stop": "83"
+                        },
+                        {
+                            "color": "#452e86",
+                            "stop": "100"
+                        }
+                    ],
+                    "interactable": {
+                        "status": true, 
+                        "text": "Density Road Length : "
+                    },
+                    "image": "Urban_Morphology_density_of_road_length.png"
+                },
+                {
+                    "name": "Density Block Number",
+                    "mapID": "internetofbuildings2021.5lk87mmi",
+                    "mapboxSrc": [
+                        "10_UrbanMorph_N_Density_Block-3bpngr"
+                    ],
+                    "type": "polygon",
+                    "representation": "2D", 
+                    "source": "https://opendata-ajuntament.barcelona.cat/es/",
+                    "scale": "detailed",
+                    "units": "N/A",
+                    "description": "The total number of blocks pew neighborhood; the higher the number, the higher the density of blocks in the area  ",
+                    "interpolation": true, 
+                    "paint": {
+                        "property": "Normalized", 
+                        "stops": [
+                            [
+                                20,
+                                "#f9f871"
+                            ],
+                            [
+                                40,
+                                "#ffb855"
+                            ],
+                            [
+                                80,
+                                "#df4d72"
+                            ],
+                            [
+                                100,
+                                "#452e86"
+                            ]
+                        ]
+                    },
+                    "legend": [
+                        {
+                            "color": "#f9f871",
+                            "stop": "0"
+                        },
+                        {
+                            "color": "#ffb855",
+                            "stop": "33"
+                        },
+                        {
+                            "color": "#df4d72",
+                            "stop": "66"
+                        },
+                        {
+                            "color": "#452e86",
+                            "stop": "100"
+                        }
+                    ],
+                    "interactable": {
+                        "status": true, 
+                        "text": "Density Block Number : "
+                    },
+                    "image": "Urban_Morphology_density_of_blocks_number.png"
+                },
+                {
+                    "name": "Mix Building Age",
+                    "mapID": "internetofbuildings2021.4mvzinho",
+                    "mapboxSrc": [
+                        "11_UrbanMorph_N_Mix_Building_-byqc7w"
+                    ],
+                    "type": "polygon",
+                    "representation": "2D", 
+                    "source": "https://opendata-ajuntament.barcelona.cat/es/",
+                    "scale": "detailed",
+                    "units": "N/A",
+                    "description": "The degree of mixing building ages per neighborhood; the higher the number, the higher the mixture of buildings ages  ",
+                    "interpolation": true, 
+                    "paint": {
+                        "property": "Normalized", 
+                        "stops": [
+                            [
+                                20,
+                                "#f9f871"
+                            ],
+                            [
+                                40,
+                                "#ffb855"
+                            ],
+                            [
+                                60,
+                                "#df4d72"
+                            ],
+                            [
+                                80,
+                                "#9d3274"
+                            ],
+                            [
+                                100,
+                                "#452e86"
+                            ]
+                        ]
+                    },
+                    "legend": [
+                        {
+                            "color": "#f9f871",
+                            "stop": "0"
+                        },
+                        {
+                            "color": "#ffb855",
+                            "stop": "33"
+                        },
+                        {
+                            "color": "#df4d72",
+                            "stop": "67"
+                        },
+                        {
+                            "color": "#9d3274",
+                            "stop": "83"
+                        },
+                        {
+                            "color": "#452e86",
+                            "stop": "100"
+                        }
+                    ],
+                    "interactable": {
+                        "status": true, 
+                        "text": "Mix Building Age : "
+                    },
+                    "image": "Urban_Morphology_Mixing_of_building_age.png" 
+                },
+                {
+                    "name": "Density Building Cover Ratio",
+                    "mapID": "internetofbuildings2021.b86wh513",
+                    "mapboxSrc": [
+                        "12_UrbanMorph_N_Building_Cove-9384n9"
+                    ],
+                    "type": "polygon",
+                    "representation": "2D", 
+                    "source": "https://opendata-ajuntament.barcelona.cat/es/",
+                    "scale": "detailed",
+                    "units": "N/A",
+                    "description": "Total number of buildings per neighborhood; the higher the ratio, the higher the density of buildings ",
+                    "interpolation": true, 
+                    "paint": {
+                        "property": "Normalized", 
+                        "stops": [
+                            [
+                                20,
+                                "#f9f871"
+                            ],
+                            [
+                                40,
+                                "#ffb855"
+                            ],
+                            [
+                                60,
+                                "#df4d72"
+                            ],
+                            [
+                                80,
+                                "#9d3274"
+                            ],
+                            [
+                                100,
+                                "#452e86"
+                            ]
+                        ]
+                    },
+                    "legend": [
+                        {
+                            "color": "#f9f871",
+                            "stop": "0"
+                        },
+                        {
+                            "color": "#ffb855",
+                            "stop": "33"
+                        },
+                        {
+                            "color": "#df4d72",
+                            "stop": "67"
+                        },
+                        {
+                            "color": "#9d3274",
+                            "stop": "83"
+                        },
+                        {
+                            "color": "#452e86",
+                            "stop": "100"
+                        }
+                    ],
+                    "interactable": {
+                        "status": true, 
+                        "text": "Densitity Building Cover Ratio : "
+                    },
+                    "image": "Urban_Morphology_vibrancy_of_building_cover_ratio.png" 
+                },
+                {
+                    "name": "Density Building Area Ratio",
+                    "mapID": "internetofbuildings2021.40qs5vev",
+                    "mapboxSrc": [
+                        "13_UrbanMorph_Building_Area_R-73wwm4"
+                    ],
+                    "type": "polygon",
+                    "representation": "2D", 
+                    "source": "https://opendata-ajuntament.barcelona.cat/es/",
+                    "scale": "detailed",
+                    "units": "N/A",
+                    "description": "Total surface of buildings per neighborhood; the higher the ratio, the higher the intensity of buildings in the area",
+                    "interpolation": true, 
+                    "paint": {
+                        "property": "BuAR REMA", 
+                        "stops": [
+                            [
+                                1,
+                                "#f9f871"
+                            ],
+                            [
+                                5,
+                                "#ffb855"
+                            ],
+                            [
+                                15,
+                                "#df4d72"
+                            ],
+                            [
+                                66,
+                                "#9d3274"
+                            ],
+                            [
+                                100,
+                                "#452e86"
+                            ]
+                        ]
+                    },
+                    "legend": [
+                        {
+                            "color": "#f9f871",
+                            "stop": "0"
+                        },
+                        {
+                            "color": "#ffb855",
+                            "stop": "33"
+                        },
+                        {
+                            "color": "#df4d72",
+                            "stop": "67"
+                        },
+                        {
+                            "color": "#9d3274",
+                            "stop": "83"
+                        },
+                        {
+                            "color": "#452e86",
+                            "stop": "100"
+                        }
+                    ],
+                    "interactable": {
+                        "status": true, 
+                        "text": "Densitity Building Area Ratio : "
+                    },
+                    "image": "Urban_Morphology_density_of_building_area_ratio.png" 
+                }
+            ]
+        },
+        {
+            "name": "Vibrancy Ground Level",
+            "sublayers": [
+                {
+                    "name": "Total Vibrancy Ground Level",
+                    "mapID": "internetofbuildings2021.6680je0x",
+                    "mapboxSrc": [
+                        "14_UrbanMorph_Vibrancy_Ground-dnd4g1"
+                    ],
+                    "type": "polygon",
+                    "representation": "2D",    
+                    "source": "https://www.openstreetmap.org/#map=6/40.007/-2.488",
+                    "scale": "detailed",
+                    "units": "N/A",
+                    "description": "Total vibrancy of an area based on streets’ and public space’s mixture of uses, activities, items and facade openness. ",
+                    "interpolation": true, 
+                    "paint": {
+                        "property": "NU_Total",
+                        "stops": [
+                            [
+                                17,
+                                "#f9f871"
+                            ],
+                            [
+                                33,
+                                "#ffb855"
+                            ],
+                            [
+                                50,
+                                "#ff7e5e"
+                            ],
+                            [
+                                67,
+                                "#df4d72"
+                            ],
+                            [
+                                83,
+                                "#9d3274"
+                            ],
+                            [
+                                100,
+                                "#452e86"
+                            ]
+                        ]
+                    },
+                    "legend": [
+                        {
+                            "color": "#f9f871",
+                            "stop": "0"
+                        },
+                        {
+                            "color": "#ffb855",
+                            "stop": "33"
+                        },
+                        {
+                            "color": "#ff7e5e",
+                            "stop": "50"
+                        },
+                        {
+                            "color": "#df4d72",
+                            "stop": "67"
+                        },
+                        {
+                            "color": "#9d3274",
+                            "stop": "83"
+                        },
+                        {
+                            "color": "#452e86",
+                            "stop": "100"
+                        }
+                    ],
+                    "interactable": {
+                        "status": true, 
+                        "text": "Total Vibrancy Ground Level: "
+                    },
+                    "image": "Urban_Morphology_groundfloor_level.png" 
+                }
+            ]
+        },
+        {
+            "name": "Urban Vibrancy",
+            "sublayers": [
+                {
+                    "name": "Total Urban Vibrancy",
+                    "mapID": "internetofbuildings2021.7o4nctue",
+                    "mapboxSrc": [
+                        "16_UrbanMorph_N_Total_Urban_V-2tdgmc"
+                    ],
+                    "type": "polygon",
+                    "representation": "2D",    
+                    "source": "https://opendata-ajuntament.barcelona.cat/es/",
+                    "scale": "detailed",
+                    "units": "N/A",
+                    "description": "Urban Vibrancy is about good urban forms and presence of people in an urban environment. The total number for this project comes from the total of both the Vibrancy of Built Environment and Ground level.",
+                    "interpolation": true, 
+                    "paint": {
+                        "property": "Normalized",
+                        "stops": [
+                            [
+                                9,
+                                "#f9f871"
+                            ],
+                            [
+                                25,
+                                "#ffb855"
+                            ],
+                            [
+                                42,
+                                "#ff7e5e"
+                            ],
+                            [
+                                64,
+                                "#df4d72"
+                            ],
+                            [
+                                84,
+                                "#9d3274"
+                            ],
+                            [
+                                100,
+                                "#452e86"
+                            ]
+                        ]
+                    },
+                    "legend": [
+                        {
+                            "color": "#f9f871",
+                            "stop": "0"
+                        },
+                        {
+                            "color": "#ffb855",
+                            "stop": "33"
+                        },
+                        {
+                            "color": "#ff7e5e",
+                            "stop": "50"
+                        },
+                        {
+                            "color": "#df4d72",
+                            "stop": "67"
+                        },
+                        {
+                            "color": "#9d3274",
+                            "stop": "83"
+                        },
+                        {
+                            "color": "#452e86",
+                            "stop": "100"
+                        }
+                    ],
+                    "interactable": {
+                        "status": true, 
+                        "text": "Total Urban Vibrancy: "
+                    },
+                    "image": "Urban_Morphology_Urban_Vibrancy.png" 
+                }
+            ]
+        }
+    ]
+}

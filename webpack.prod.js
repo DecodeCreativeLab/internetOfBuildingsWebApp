@@ -6,6 +6,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin")
 const TerserPlugin = require("terser-webpack-plugin")
 const Dotenv = require('dotenv-webpack');
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = merge(common, {
     mode: "production",
@@ -48,7 +49,22 @@ module.exports = merge(common, {
             path: './.env',
             safe: true,
             allowEmptyValues: true,
-        })
+        }),
+        new CopyPlugin({
+            patterns: [{
+                from: "./src/videos/*.mp4",
+                to({ context, absoluteFilename }) {
+                  return Promise.resolve("./videos/[name][ext]");
+                },
+              },
+              {
+                from: "./src/images/favicon/*.ico",
+                to({ context, absoluteFilename }) {
+                  return Promise.resolve("./images/favicon/[name][ext]");
+                },
+              },
+            ]
+        }),
     ],
     module: {
         rules: [
@@ -60,6 +76,7 @@ module.exports = merge(common, {
                     'sass-loader' //1. Turns sass into css
                 ],
             },
+            
             {
                 test: /\.node$/,
                 loader: "node-loader",

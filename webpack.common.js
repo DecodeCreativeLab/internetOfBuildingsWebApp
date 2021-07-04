@@ -2,14 +2,26 @@
 module.exports = {
     entry: {
         index: './src/index.js',
-        landingPage: './src/landingPage.js', 
+        landingPage: './src/landingPage.js',
     },
+    plugins: [
+       
+    ],
     module: {
         rules: [
             {
                 test: /\.html$/,
-                use: ["html-loader"]
+                // exclude: /node_modules/,
+                use: [
+                    {
+                        loader: "html-loader",
+                        options: {
+                            // attrs: [":src"]
+                        }
+                    }
+                ]
             },
+
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 use: {
@@ -19,7 +31,9 @@ module.exports = {
                         outputPath: "images"
                     }
                 }
-            }
-        ]        
+
+            },
+           
+        ]
     }
 };

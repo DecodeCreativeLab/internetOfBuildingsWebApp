@@ -37,7 +37,7 @@ const buildings = {
             ],
         ],
         "extrusion-height": "height",           
-        "extrusion-opacity": 1
+        "extrusion-opacity": 0.5
     },
     "uuid":uuidv4()
 }

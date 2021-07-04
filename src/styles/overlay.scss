@@ -1,7 +1,7 @@
 @import "vars";
 
 .overlay-title {
-    margin-left: 1rem;
+    margin-left: 1.5rem;
 }
 
 .overlay-text {
@@ -9,6 +9,10 @@
     // overflow-y: auto;
     text-align: justify;
     
+}
+
+.overlay h1{
+    margin-left: 0.5rem;
 }
 
 .image-container {
